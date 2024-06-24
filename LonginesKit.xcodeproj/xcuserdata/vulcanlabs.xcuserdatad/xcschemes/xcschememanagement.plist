@@ -6,13 +6,30 @@
 	<dict>
 		<key>AppSample.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 		<key>LonginesKit.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>21FFCC822C29508A00BD543A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21FFCC982C295D9000BD543A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
