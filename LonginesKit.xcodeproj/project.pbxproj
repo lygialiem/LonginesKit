@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21FFCC872C29508A00BD543A /* LonginesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FFCC862C29508A00BD543A /* LonginesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21FFCC902C29510000BD543A /* LKAppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */; };
+		21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9B2C295D9000BD543A /* AppDelegate.swift */; };
+		21FFCC9E2C295D9000BD543A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9D2C295D9000BD543A /* SceneDelegate.swift */; };
+		21FFCCA02C295D9000BD543A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* ViewController.swift */; };
+		21FFCCA32C295D9000BD543A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA12C295D9000BD543A /* Main.storyboard */; };
+		21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA42C295D9200BD543A /* Assets.xcassets */; };
+		21FFCCA82C295D9200BD543A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */; };
+		21FFCCAE2C295DF200BD543A /* LonginesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFCC832C29508A00BD543A /* LonginesKit.framework */; };
+		21FFCCAF2C295DF200BD543A /* LonginesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFCC832C29508A00BD543A /* LonginesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		21FFCCB42C2964D200BD543A /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
+		21FFCCB62C29661200BD543A /* Bundle Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB52C29661200BD543A /* Bundle Ext.swift */; };
+		21FFCCB82C2966C200BD543A /* UIColor Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB72C2966C200BD543A /* UIColor Ext.swift */; };
+		21FFCCBA2C2967CE00BD543A /* Dictionary Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB92C2967CE00BD543A /* Dictionary Ext.swift */; };
+		21FFCCBC2C29681400BD543A /* UIView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBB2C29681400BD543A /* UIView Ext.swift */; };
+		21FFCCBE2C296A6D00BD543A /* Data Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBD2C296A6D00BD543A /* Data Ext.swift */; };
+		21FFCCC02C296AC300BD543A /* UIViewController Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBF2C296AC300BD543A /* UIViewController Ext.swift */; };
+		21FFCCC22C296DC900BD543A /* LKUserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC12C296DC900BD543A /* LKUserDefaultsWrapper.swift */; };
+		21FFCCC42C296ED800BD543A /* UIStackView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC32C296ED800BD543A /* UIStackView Ext.swift */; };
+		21FFCCC62C296FA200BD543A /* LKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC52C296FA200BD543A /* LKCell.swift */; };
+		21FFCCC92C2970DF00BD543A /* LKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC82C2970DF00BD543A /* LKBaseViewController.swift */; };
+		21FFCCD02C29717700BD543A /* LKBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCCB2C29717700BD543A /* LKBaseView.swift */; };
+		21FFCCD22C29717700BD543A /* LKBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCCD2C29717700BD543A /* LKBaseNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21FFCCB02C295DF200BD543A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21FFCC822C29508A00BD543A;
+			remoteInfo = LonginesKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21FFCCB22C295DF200BD543A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				21FFCCAF2C295DF200BD543A /* LonginesKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21FFCC832C29508A00BD543A /* LonginesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FFCC862C29508A00BD543A /* LonginesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonginesKit.h; sourceTree = "<group>"; };
+		21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppAppearance.swift; sourceTree = "<group>"; };
+		21FFCC992C295D9000BD543A /* AppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FFCC9B2C295D9000BD543A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21FFCC9D2C295D9000BD543A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		21FFCC9F2C295D9000BD543A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21FFCCA22C295D9000BD543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21FFCCA42C295D9200BD543A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21FFCCA72C295D9200BD543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21FFCCA92C295D9200BD543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLoggingPrint.swift; sourceTree = "<group>"; };
+		21FFCCB52C29661200BD543A /* Bundle Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle Ext.swift"; sourceTree = "<group>"; };
+		21FFCCB72C2966C200BD543A /* UIColor Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor Ext.swift"; sourceTree = "<group>"; };
+		21FFCCB92C2967CE00BD543A /* Dictionary Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary Ext.swift"; sourceTree = "<group>"; };
+		21FFCCBB2C29681400BD543A /* UIView Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Ext.swift"; sourceTree = "<group>"; };
+		21FFCCBD2C296A6D00BD543A /* Data Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Ext.swift"; sourceTree = "<group>"; };
+		21FFCCBF2C296AC300BD543A /* UIViewController Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController Ext.swift"; sourceTree = "<group>"; };
+		21FFCCC12C296DC900BD543A /* LKUserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKUserDefaultsWrapper.swift; sourceTree = "<group>"; };
+		21FFCCC32C296ED800BD543A /* UIStackView Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView Ext.swift"; sourceTree = "<group>"; };
+		21FFCCC52C296FA200BD543A /* LKCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKCell.swift; sourceTree = "<group>"; };
+		21FFCCC82C2970DF00BD543A /* LKBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKBaseViewController.swift; sourceTree = "<group>"; };
+		21FFCCCB2C29717700BD543A /* LKBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBaseView.swift; sourceTree = "<group>"; };
+		21FFCCCD2C29717700BD543A /* LKBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBaseNavigationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21FFCC802C29508A00BD543A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FFCC962C295D9000BD543A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FFCCAE2C295DF200BD543A /* LonginesKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21FFCC792C29508A00BD543A = {
+			isa = PBXGroup;
+			children = (
+				21FFCC852C29508A00BD543A /* LonginesKit */,
+				21FFCC9A2C295D9000BD543A /* AppSample */,
+				21FFCC842C29508A00BD543A /* Products */,
+				21FFCCAD2C295DF200BD543A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21FFCC842C29508A00BD543A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21FFCC832C29508A00BD543A /* LonginesKit.framework */,
+				21FFCC992C295D9000BD543A /* AppSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21FFCC852C29508A00BD543A /* LonginesKit */ = {
+			isa = PBXGroup;
+			children = (
+				21FFCCC72C2970D900BD543A /* Base */,
+				21FFCC862C29508A00BD543A /* LonginesKit.h */,
+				21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */,
+				21FFCCC12C296DC900BD543A /* LKUserDefaultsWrapper.swift */,
+				21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */,
+				21FFCCB52C29661200BD543A /* Bundle Ext.swift */,
+				21FFCCB72C2966C200BD543A /* UIColor Ext.swift */,
+				21FFCCB92C2967CE00BD543A /* Dictionary Ext.swift */,
+				21FFCCBB2C29681400BD543A /* UIView Ext.swift */,
+				21FFCCBD2C296A6D00BD543A /* Data Ext.swift */,
+				21FFCCBF2C296AC300BD543A /* UIViewController Ext.swift */,
+				21FFCCC32C296ED800BD543A /* UIStackView Ext.swift */,
+				21FFCCC52C296FA200BD543A /* LKCell.swift */,
+			);
+			path = LonginesKit;
+			sourceTree = "<group>";
+		};
+		21FFCC9A2C295D9000BD543A /* AppSample */ = {
+			isa = PBXGroup;
+			children = (
+				21FFCC9B2C295D9000BD543A /* AppDelegate.swift */,
+				21FFCC9D2C295D9000BD543A /* SceneDelegate.swift */,
+				21FFCC9F2C295D9000BD543A /* ViewController.swift */,
+				21FFCCA12C295D9000BD543A /* Main.storyboard */,
+				21FFCCA42C295D9200BD543A /* Assets.xcassets */,
+				21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */,
+				21FFCCA92C295D9200BD543A /* Info.plist */,
+			);
+			path = AppSample;
+			sourceTree = "<group>";
+		};
+		21FFCCAD2C295DF200BD543A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21FFCCC72C2970D900BD543A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				21FFCCCD2C29717700BD543A /* LKBaseNavigationController.swift */,
+				21FFCCCB2C29717700BD543A /* LKBaseView.swift */,
+				21FFCCC82C2970DF00BD543A /* LKBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		21FFCC7E2C29508A00BD543A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FFCC872C29508A00BD543A /* LonginesKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21FFCC822C29508A00BD543A /* LonginesKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FFCC8A2C29508A00BD543A /* Build configuration list for PBXNativeTarget "LonginesKit" */;
+			buildPhases = (
+				21FFCC7E2C29508A00BD543A /* Headers */,
+				21FFCC7F2C29508A00BD543A /* Sources */,
+				21FFCC802C29508A00BD543A /* Frameworks */,
+				21FFCC812C29508A00BD543A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LonginesKit;
+			productName = LonginesKit;
+			productReference = 21FFCC832C29508A00BD543A /* LonginesKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		21FFCC982C295D9000BD543A /* AppSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FFCCAA2C295D9200BD543A /* Build configuration list for PBXNativeTarget "AppSample" */;
+			buildPhases = (
+				21FFCC952C295D9000BD543A /* Sources */,
+				21FFCC962C295D9000BD543A /* Frameworks */,
+				21FFCC972C295D9000BD543A /* Resources */,
+				21FFCCB22C295DF200BD543A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21FFCCB12C295DF200BD543A /* PBXTargetDependency */,
+			);
+			name = AppSample;
+			productName = AppSample;
+			productReference = 21FFCC992C295D9000BD543A /* AppSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21FFCC7A2C29508A00BD543A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					21FFCC822C29508A00BD543A = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					21FFCC982C295D9000BD543A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 21FFCC7D2C29508A00BD543A /* Build configuration list for PBXProject "LonginesKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21FFCC792C29508A00BD543A;
+			productRefGroup = 21FFCC842C29508A00BD543A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21FFCC822C29508A00BD543A /* LonginesKit */,
+				21FFCC982C295D9000BD543A /* AppSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21FFCC812C29508A00BD543A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FFCC972C295D9000BD543A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FFCCA82C295D9200BD543A /* LaunchScreen.storyboard in Resources */,
+				21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */,
+				21FFCCA32C295D9000BD543A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21FFCC7F2C29508A00BD543A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FFCCD02C29717700BD543A /* LKBaseView.swift in Sources */,
+				21FFCC902C29510000BD543A /* LKAppAppearance.swift in Sources */,
+				21FFCCC22C296DC900BD543A /* LKUserDefaultsWrapper.swift in Sources */,
+				21FFCCC42C296ED800BD543A /* UIStackView Ext.swift in Sources */,
+				21FFCCB62C29661200BD543A /* Bundle Ext.swift in Sources */,
+				21FFCCB82C2966C200BD543A /* UIColor Ext.swift in Sources */,
+				21FFCCC02C296AC300BD543A /* UIViewController Ext.swift in Sources */,
+				21FFCCBC2C29681400BD543A /* UIView Ext.swift in Sources */,
+				21FFCCB42C2964D200BD543A /* LKLoggingPrint.swift in Sources */,
+				21FFCCBE2C296A6D00BD543A /* Data Ext.swift in Sources */,
+				21FFCCD22C29717700BD543A /* LKBaseNavigationController.swift in Sources */,
+				21FFCCC62C296FA200BD543A /* LKCell.swift in Sources */,
+				21FFCCC92C2970DF00BD543A /* LKBaseViewController.swift in Sources */,
+				21FFCCBA2C2967CE00BD543A /* Dictionary Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FFCC952C295D9000BD543A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FFCCA02C295D9000BD543A /* ViewController.swift in Sources */,
+				21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */,
+				21FFCC9E2C295D9000BD543A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21FFCCB12C295DF200BD543A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21FFCC822C29508A00BD543A /* LonginesKit */;
+			targetProxy = 21FFCCB02C295DF200BD543A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21FFCCA12C295D9000BD543A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21FFCCA22C295D9000BD543A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21FFCCA72C295D9200BD543A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21FFCC882C29508A00BD543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		21FFCC892C29508A00BD543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		21FFCC8B2C29508A00BD543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J4D7TC83XB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21FFCC8C2C29508A00BD543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J4D7TC83XB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.LonginesKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21FFCCAB2C295D9200BD543A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4D7TC83XB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.AppSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21FFCCAC2C295D9200BD543A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4D7TC83XB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.AppSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21FFCC7D2C29508A00BD543A /* Build configuration list for PBXProject "LonginesKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FFCC882C29508A00BD543A /* Debug */,
+				21FFCC892C29508A00BD543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FFCC8A2C29508A00BD543A /* Build configuration list for PBXNativeTarget "LonginesKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FFCC8B2C29508A00BD543A /* Debug */,
+				21FFCC8C2C29508A00BD543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FFCCAA2C295D9200BD543A /* Build configuration list for PBXNativeTarget "AppSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FFCCAB2C295D9200BD543A /* Debug */,
+				21FFCCAC2C295D9200BD543A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21FFCC7A2C29508A00BD543A /* Project object */;
+}
