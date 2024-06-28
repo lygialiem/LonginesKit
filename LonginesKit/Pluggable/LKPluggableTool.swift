@@ -6,11 +6,11 @@
 
 import UIKit
 
-struct LKPluggableTool {
+public struct LKPluggableTool {
     
-    static var appDelegate: UIApplicationDelegate? { UIApplication.shared.delegate }
+    public static var appDelegate: UIApplicationDelegate? { UIApplication.shared.delegate }
     
-    static func queryAppDelegate<T>(for service: T.Type) -> T? {
+    public static func queryAppDelegate<T>(for service: T.Type) -> T? {
         return (UIApplication.shared.delegate! as? LKPluggableApplicationDelegate)?.queryService()
     }
 }
