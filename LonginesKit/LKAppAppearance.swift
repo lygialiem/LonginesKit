@@ -79,7 +79,7 @@ extension CGFloat {
     }
     
     func scale(ratio: CGFloat) -> CGFloat {
-        return (self * ratio).rounded()
+        return (self * ratio)
     }
     
     var diagonalRatio: CGFloat {
