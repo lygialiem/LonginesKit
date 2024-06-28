@@ -7,6 +7,7 @@
 
 import UIKit
 import LonginesKit
+import LonginesFirebase
 
 @main
 class AppDelegate: LKPluggableApplicationDelegate {
@@ -21,10 +22,15 @@ class AppDelegate: LKPluggableApplicationDelegate {
     override init() {
         super.init()
         
+        let firebasePlugin = LKFirebaseConfigPlugin.init(testDeviceIDs: [])
+        let remoteConfigPlugin = LKRemoteConfigPlugin(firebasePlugin: firebasePlugin)
+        
         internalServices = [
-            
+            firebasePlugin,
+            remoteConfigPlugin,
+            LKRemoteConfigPlugin.init(firebasePlugin: firebasePlugin),
+            LKUserPropertyPlugin.init(remoteConfigPlugin: remoteConfigPlugin)
         ]
-       
     }
     
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

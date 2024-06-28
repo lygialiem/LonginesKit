@@ -1,6 +1,6 @@
 //
-//  OCDPluggableApplicationDelegate.swift
-//  OCD
+//  LKPluggableApplicationDelegate.swift
+//  LK
 //
 //  Created by aiden on 27/10/2023.
 //
