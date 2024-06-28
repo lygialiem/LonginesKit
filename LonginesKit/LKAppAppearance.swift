@@ -67,7 +67,7 @@ extension CGFloat {
     }
     
     public var scaleY: CGFloat {
-        return scale(ratio: CGFloat.screenHeight / LKAppAppearance.designerScreenWidth)
+        return scale(ratio: CGFloat.screenHeight / LKAppAppearance.designerScreenHeight)
     }
     
     public static var screenWidth: CGFloat {
