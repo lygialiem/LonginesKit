@@ -8,9 +8,10 @@
 import UIKit
 import LonginesKit
 
-class ViewController: LKBaseViewController {
+class HomeViewController: LKBaseViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .red
     }
 }

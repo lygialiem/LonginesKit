@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C898A802C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7C2C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift */; };
+		0C898A812C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7D2C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift */; };
+		0C898A822C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */; };
+		0C898A832C2EB11B00296E0B /* LKPluggableTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7F2C2EB11B00296E0B /* LKPluggableTool.swift */; };
 		21FFCC872C29508A00BD543A /* LonginesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FFCC862C29508A00BD543A /* LonginesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21FFCC902C29510000BD543A /* LKAppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */; };
 		21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9B2C295D9000BD543A /* AppDelegate.swift */; };
-		21FFCC9E2C295D9000BD543A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9D2C295D9000BD543A /* SceneDelegate.swift */; };
-		21FFCCA02C295D9000BD543A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* ViewController.swift */; };
-		21FFCCA32C295D9000BD543A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA12C295D9000BD543A /* Main.storyboard */; };
+		21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* HomeViewController.swift */; };
 		21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA42C295D9200BD543A /* Assets.xcassets */; };
 		21FFCCA82C295D9200BD543A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */; };
 		21FFCCAE2C295DF200BD543A /* LonginesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFCC832C29508A00BD543A /* LonginesKit.framework */; };
@@ -57,14 +59,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C898A7C2C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableServiceProviderProtocol.swift; sourceTree = "<group>"; };
+		0C898A7D2C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableApplicationDelegate.swift; sourceTree = "<group>"; };
+		0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableApplicationDelegateService.swift; sourceTree = "<group>"; };
+		0C898A7F2C2EB11B00296E0B /* LKPluggableTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableTool.swift; sourceTree = "<group>"; };
 		21FFCC832C29508A00BD543A /* LonginesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFCC862C29508A00BD543A /* LonginesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonginesKit.h; sourceTree = "<group>"; };
 		21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppAppearance.swift; sourceTree = "<group>"; };
 		21FFCC992C295D9000BD543A /* AppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFCC9B2C295D9000BD543A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21FFCC9D2C295D9000BD543A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21FFCC9F2C295D9000BD543A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		21FFCCA22C295D9000BD543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21FFCC9F2C295D9000BD543A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		21FFCCA42C295D9200BD543A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21FFCCA72C295D9200BD543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21FFCCA92C295D9200BD543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +106,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C898A7B2C2EB0C500296E0B /* Pluggable */ = {
+			isa = PBXGroup;
+			children = (
+				0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */,
+				0C898A7D2C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift */,
+				0C898A7C2C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift */,
+				0C898A7F2C2EB11B00296E0B /* LKPluggableTool.swift */,
+			);
+			path = Pluggable;
+			sourceTree = "<group>";
+		};
 		21FFCC792C29508A00BD543A = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +139,7 @@
 		21FFCC852C29508A00BD543A /* LonginesKit */ = {
 			isa = PBXGroup;
 			children = (
+				0C898A7B2C2EB0C500296E0B /* Pluggable */,
 				21FFCCC72C2970D900BD543A /* Base */,
 				21FFCC862C29508A00BD543A /* LonginesKit.h */,
 				21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */,
@@ -145,9 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				21FFCC9B2C295D9000BD543A /* AppDelegate.swift */,
-				21FFCC9D2C295D9000BD543A /* SceneDelegate.swift */,
-				21FFCC9F2C295D9000BD543A /* ViewController.swift */,
-				21FFCCA12C295D9000BD543A /* Main.storyboard */,
+				21FFCC9F2C295D9000BD543A /* HomeViewController.swift */,
 				21FFCCA42C295D9200BD543A /* Assets.xcassets */,
 				21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */,
 				21FFCCA92C295D9200BD543A /* Info.plist */,
@@ -231,7 +245,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					21FFCC822C29508A00BD543A = {
 						CreatedOnToolsVersion = 15.2;
@@ -275,7 +289,6 @@
 			files = (
 				21FFCCA82C295D9200BD543A /* LaunchScreen.storyboard in Resources */,
 				21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */,
-				21FFCCA32C295D9000BD543A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,13 +301,17 @@
 			files = (
 				21FFCCD02C29717700BD543A /* LKBaseView.swift in Sources */,
 				21FFCC902C29510000BD543A /* LKAppAppearance.swift in Sources */,
+				0C898A822C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift in Sources */,
 				21FFCCC22C296DC900BD543A /* LKUserDefaultsWrapper.swift in Sources */,
 				21FFCCC42C296ED800BD543A /* UIStackView Ext.swift in Sources */,
 				21FFCCB62C29661200BD543A /* Bundle Ext.swift in Sources */,
+				0C898A832C2EB11B00296E0B /* LKPluggableTool.swift in Sources */,
 				21FFCCB82C2966C200BD543A /* UIColor Ext.swift in Sources */,
 				21FFCCC02C296AC300BD543A /* UIViewController Ext.swift in Sources */,
 				21FFCCBC2C29681400BD543A /* UIView Ext.swift in Sources */,
+				0C898A812C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift in Sources */,
 				21FFCCB42C2964D200BD543A /* LKLoggingPrint.swift in Sources */,
+				0C898A802C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift in Sources */,
 				21FFCCBE2C296A6D00BD543A /* Data Ext.swift in Sources */,
 				21FFCCD22C29717700BD543A /* LKBaseNavigationController.swift in Sources */,
 				21FFCCC62C296FA200BD543A /* LKCell.swift in Sources */,
@@ -307,9 +324,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21FFCCA02C295D9000BD543A /* ViewController.swift in Sources */,
+				21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */,
 				21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */,
-				21FFCC9E2C295D9000BD543A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,14 +340,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		21FFCCA12C295D9000BD543A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				21FFCCA22C295D9000BD543A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -473,6 +481,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -507,6 +516,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -546,10 +556,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,9 +567,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.AppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -574,10 +588,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,9 +599,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.AppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
