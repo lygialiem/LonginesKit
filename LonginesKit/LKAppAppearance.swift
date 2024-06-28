@@ -119,8 +119,7 @@ extension UIApplication {
     }
     
     public static var keyWindow: UIWindow? {
-        guard windowScene?.activationState == .foregroundActive,
-              let window = windowScene?.windows.first
+        guard let window = windowScene?.windows.first
         else {
             return nil
         }
