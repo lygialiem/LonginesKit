@@ -1,11 +1,8 @@
-xcshareddata/
 xcuserdata/
 Checkouts/
 Carthage/
-Carthage
-Pods/*
-DerivedData/
-
+Libraries/
+Repo/
 
 **/*-LICENSE
 *-LICENSE
@@ -13,23 +10,11 @@ DerivedData/
 LICENSE
 
 **/.DS_Store
-**/*.md
+**/*.lock
+**/*.txt
 **/*.zip
 .DS_Store
-.build
-*.xcworkspace
-*.md
+*.lock
+*.txt
 *.zip
-*.generated.swift
-
-4VAA4FJFLY.cer
-HTT258M44M.cer
-fastlane/report.xml
-fastlane/Appfile
-*.ipa
-Podfile.lock
-Gemfile.lock
-R.generated.swift
-elm.log
-elm.log.*
-R.generated.swift
+*.version
