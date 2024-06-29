@@ -43,8 +43,6 @@
 		0C6B886C2C3004D600CA41AF /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABC2C2ED2E500296E0B /* GoogleDataTransport.xcframework */; };
 		0C6B886E2C3004D600CA41AF /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABD2C2ED2E500296E0B /* GoogleMobileAds.xcframework */; };
 		0C6B88702C3004D600CA41AF /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABE2C2ED2E500296E0B /* GoogleUtilities.xcframework */; };
-		0C6B88722C3004D600CA41AF /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AAD2C2ED2E500296E0B /* Firebase.framework */; };
-		0C6B88742C3004D600CA41AF /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AAE2C2ED2E500296E0B /* Protobuf.framework */; };
 		0C6B88762C3004D600CA41AF /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABF2C2ED2E500296E0B /* nanopb.xcframework */; };
 		0C6B88782C3004D600CA41AF /* Promises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AC02C2ED2E500296E0B /* Promises.xcframework */; };
 		0C6B887A2C3004D600CA41AF /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AC12C2ED2E500296E0B /* UserMessagingPlatform.xcframework */; };
@@ -183,13 +181,11 @@
 				0C6B88762C3004D600CA41AF /* nanopb.xcframework in Frameworks */,
 				0C6B887D2C30057E00CA41AF /* LonginesKit.framework in Frameworks */,
 				0C6B88602C3004D500CA41AF /* FirebaseRemoteConfig.xcframework in Frameworks */,
-				0C6B88742C3004D600CA41AF /* Protobuf.framework in Frameworks */,
 				0C6B88622C3004D500CA41AF /* FirebaseRemoteConfigInterop.xcframework in Frameworks */,
 				0C6B885C2C3004D500CA41AF /* FirebaseInstallations.xcframework in Frameworks */,
 				0C6B88582C3004D500CA41AF /* FirebaseCoreInternal.xcframework in Frameworks */,
 				0C6B885A2C3004D500CA41AF /* FirebaseCrashlytics.xcframework in Frameworks */,
 				0C6B88782C3004D600CA41AF /* Promises.xcframework in Frameworks */,
-				0C6B88722C3004D600CA41AF /* Firebase.framework in Frameworks */,
 				0C6B886E2C3004D600CA41AF /* GoogleMobileAds.xcframework in Frameworks */,
 				0C6B886C2C3004D600CA41AF /* GoogleDataTransport.xcframework in Frameworks */,
 				0C6B88542C3004D500CA41AF /* FirebaseAnalytics.xcframework in Frameworks */,
