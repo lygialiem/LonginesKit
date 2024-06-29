@@ -48,6 +48,9 @@
 		0C6B887A2C3004D600CA41AF /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AC12C2ED2E500296E0B /* UserMessagingPlatform.xcframework */; };
 		0C6B887D2C30057E00CA41AF /* LonginesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */; };
 		0C6B88832C3038E000CA41AF /* LKPluggableApplicationDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */; };
+		0CC661382C30653C00E869A9 /* LonginesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */; };
+		0CC661392C30653C00E869A9 /* LonginesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CC661442C306DDE00E869A9 /* LKAnalyticPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC661422C306D9800E869A9 /* LKAnalyticPlugin.swift */; };
 		0CE78EFD2C2FFE1C00B4284B /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; };
 		0CE78EFE2C2FFE1C00B4284B /* LonginesFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CE78F342C30004A00B4284B /* LKFirebaseConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE52C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift */; };
@@ -67,6 +70,13 @@
 			remoteGlobalIDString = 0C6B88322C3002FD00CA41AF;
 			remoteInfo = "LonginesKit copy";
 		};
+		0CC6613A2C30653C00E869A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C6B88322C3002FD00CA41AF;
+			remoteInfo = LonginesKit;
+		};
 		0CE78EFB2C2FFE1C00B4284B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
@@ -83,6 +93,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0CC661392C30653C00E869A9 /* LonginesKit.framework in Embed Frameworks */,
 				0CE78EFE2C2FFE1C00B4284B /* LonginesFirebase.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -130,6 +141,7 @@
 		0C898B8E2C2F29D100296E0B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0C898B902C2F29E000296E0B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0C898B922C2F29F000296E0B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0CC661422C306D9800E869A9 /* LKAnalyticPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAnalyticPlugin.swift; sourceTree = "<group>"; };
 		0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFCC862C29508A00BD543A /* LonginesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonginesKit.h; sourceTree = "<group>"; };
 		21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppAppearance.swift; sourceTree = "<group>"; };
@@ -195,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC661382C30653C00E869A9 /* LonginesKit.framework in Frameworks */,
 				0CE78EFD2C2FFE1C00B4284B /* LonginesFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +277,7 @@
 				0C898AE52C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift */,
 				0C898AE32C2F1E0100296E0B /* LKRemoteConfigPlugin.swift */,
 				0C898AE42C2F1E0100296E0B /* LKUserPropertyPlugin.swift */,
+				0CC661422C306D9800E869A9 /* LKAnalyticPlugin.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -421,6 +435,7 @@
 			);
 			dependencies = (
 				0CE78EFC2C2FFE1C00B4284B /* PBXTargetDependency */,
+				0CC6613B2C30653C00E869A9 /* PBXTargetDependency */,
 			);
 			name = AppSample;
 			productName = AppSample;
@@ -521,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC661442C306DDE00E869A9 /* LKAnalyticPlugin.swift in Sources */,
 				0CE78F342C30004A00B4284B /* LKFirebaseConfigPlugin.swift in Sources */,
 				0CE78F352C30004A00B4284B /* LKRemoteConfigPlugin.swift in Sources */,
 				0CE78F362C30004A00B4284B /* LKUserPropertyPlugin.swift in Sources */,
@@ -543,6 +559,11 @@
 			isa = PBXTargetDependency;
 			target = 0C6B88322C3002FD00CA41AF /* LonginesKit */;
 			targetProxy = 0C6B887F2C30057E00CA41AF /* PBXContainerItemProxy */;
+		};
+		0CC6613B2C30653C00E869A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C6B88322C3002FD00CA41AF /* LonginesKit */;
+			targetProxy = 0CC6613A2C30653C00E869A9 /* PBXContainerItemProxy */;
 		};
 		0CE78EFC2C2FFE1C00B4284B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -862,9 +883,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZMXVCZHUH3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -878,7 +900,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.AppSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.appsamplee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -897,9 +919,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZMXVCZHUH3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -913,7 +936,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.AppSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.appsamplee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
