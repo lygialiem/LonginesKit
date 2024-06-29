@@ -20,7 +20,6 @@
 		0C898AE82C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE52C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift */; };
 		0C898B592C2F261C00296E0B /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
 		0C898B5A2C2F261C00296E0B /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
-		0C898B5B2C2F270F00296E0B /* LonginesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFCC832C29508A00BD543A /* LonginesKit.framework */; };
 		0C898B632C2F298A00296E0B /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB32C2ED2E500296E0B /* FBLPromises.xcframework */; };
 		0C898B652C2F298A00296E0B /* FirebaseABTesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB42C2ED2E500296E0B /* FirebaseABTesting.xcframework */; };
 		0C898B672C2F298A00296E0B /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AEB2C2F1EBA00296E0B /* FirebaseAnalytics.xcframework */; };
@@ -75,13 +74,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0C898A8F2C2ED2C900296E0B;
 			remoteInfo = LonginesFirebase;
-		};
-		0C898B5D2C2F271000296E0B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21FFCC822C29508A00BD543A;
-			remoteInfo = LonginesKit;
 		};
 		21FFCCB02C295DF200BD543A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -193,7 +185,6 @@
 				0C898B692C2F298A00296E0B /* FirebaseCore.xcframework in Frameworks */,
 				0C898B8F2C2F29D700296E0B /* libc++.tbd in Frameworks */,
 				0C898B632C2F298A00296E0B /* FBLPromises.xcframework in Frameworks */,
-				0C898B5B2C2F270F00296E0B /* LonginesKit.framework in Frameworks */,
 				0C898B892C2F298C00296E0B /* Promises.xcframework in Frameworks */,
 				0C898B912C2F29E700296E0B /* libsqlite3.tbd in Frameworks */,
 				0C898B6B2C2F298A00296E0B /* FirebaseCoreExtension.xcframework in Frameworks */,
@@ -415,7 +406,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0C898B5E2C2F271000296E0B /* PBXTargetDependency */,
 			);
 			name = LonginesFirebase;
 			productName = LonginesFirebase;
@@ -583,11 +573,6 @@
 			isa = PBXTargetDependency;
 			target = 0C898A8F2C2ED2C900296E0B /* LonginesFirebase */;
 			targetProxy = 0C898AA32C2ED2CA00296E0B /* PBXContainerItemProxy */;
-		};
-		0C898B5E2C2F271000296E0B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21FFCC822C29508A00BD543A /* LonginesKit */;
-			targetProxy = 0C898B5D2C2F271000296E0B /* PBXContainerItemProxy */;
 		};
 		21FFCCB12C295DF200BD543A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
