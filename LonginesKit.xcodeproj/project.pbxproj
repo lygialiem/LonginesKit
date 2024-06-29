@@ -7,10 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C898A802C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7C2C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift */; };
-		0C898A812C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7D2C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift */; };
-		0C898A822C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */; };
-		0C898A832C2EB11B00296E0B /* LKPluggableTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7F2C2EB11B00296E0B /* LKPluggableTool.swift */; };
+		0C6B88342C3002FD00CA41AF /* LonginesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FFCC862C29508A00BD543A /* LonginesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C6B88362C3002FD00CA41AF /* LKBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCCB2C29717700BD543A /* LKBaseView.swift */; };
+		0C6B88372C3002FD00CA41AF /* LKAppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */; };
+		0C6B88382C3002FD00CA41AF /* LKPluggableApplicationDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */; };
+		0C6B88392C3002FD00CA41AF /* LKUserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC12C296DC900BD543A /* LKUserDefaultsWrapper.swift */; };
+		0C6B883A2C3002FD00CA41AF /* UIStackView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC32C296ED800BD543A /* UIStackView Ext.swift */; };
+		0C6B883B2C3002FD00CA41AF /* Bundle Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB52C29661200BD543A /* Bundle Ext.swift */; };
+		0C6B883C2C3002FD00CA41AF /* LKPluggableTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7F2C2EB11B00296E0B /* LKPluggableTool.swift */; };
+		0C6B883D2C3002FD00CA41AF /* UIColor Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB72C2966C200BD543A /* UIColor Ext.swift */; };
+		0C6B883E2C3002FD00CA41AF /* UIViewController Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBF2C296AC300BD543A /* UIViewController Ext.swift */; };
+		0C6B883F2C3002FD00CA41AF /* UIView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBB2C29681400BD543A /* UIView Ext.swift */; };
+		0C6B88402C3002FD00CA41AF /* LKPluggableApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7D2C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift */; };
+		0C6B88412C3002FD00CA41AF /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
+		0C6B88422C3002FD00CA41AF /* LKPluggableServiceProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7C2C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift */; };
+		0C6B88432C3002FD00CA41AF /* Data Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBD2C296A6D00BD543A /* Data Ext.swift */; };
+		0C6B88442C3002FD00CA41AF /* LKBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCCD2C29717700BD543A /* LKBaseNavigationController.swift */; };
+		0C6B88452C3002FD00CA41AF /* LKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC52C296FA200BD543A /* LKCell.swift */; };
+		0C6B88462C3002FD00CA41AF /* LKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC82C2970DF00BD543A /* LKBaseViewController.swift */; };
+		0C6B88472C3002FD00CA41AF /* Dictionary Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB92C2967CE00BD543A /* Dictionary Ext.swift */; };
 		0C898B5A2C2F261C00296E0B /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
 		0CE78EBE2C2FFCE200B4284B /* LonginesFirebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C898A922C2ED2C900296E0B /* LonginesFirebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CE78EC12C2FFCE200B4284B /* LonginesFirebase.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A932C2ED2C900296E0B /* LonginesFirebase.docc */; };
@@ -71,28 +86,10 @@
 		0CE78F342C30004A00B4284B /* LKFirebaseConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE52C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift */; };
 		0CE78F352C30004A00B4284B /* LKRemoteConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE32C2F1E0100296E0B /* LKRemoteConfigPlugin.swift */; };
 		0CE78F362C30004A00B4284B /* LKUserPropertyPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE42C2F1E0100296E0B /* LKUserPropertyPlugin.swift */; };
-		0CE78F372C30009000B4284B /* LonginesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFCC832C29508A00BD543A /* LonginesKit.framework */; platformFilter = ios; };
-		21FFCC872C29508A00BD543A /* LonginesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FFCC862C29508A00BD543A /* LonginesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21FFCC902C29510000BD543A /* LKAppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */; };
 		21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9B2C295D9000BD543A /* AppDelegate.swift */; };
 		21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* HomeViewController.swift */; };
 		21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA42C295D9200BD543A /* Assets.xcassets */; };
 		21FFCCA82C295D9200BD543A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */; };
-		21FFCCAE2C295DF200BD543A /* LonginesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFCC832C29508A00BD543A /* LonginesKit.framework */; };
-		21FFCCAF2C295DF200BD543A /* LonginesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFCC832C29508A00BD543A /* LonginesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		21FFCCB42C2964D200BD543A /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
-		21FFCCB62C29661200BD543A /* Bundle Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB52C29661200BD543A /* Bundle Ext.swift */; };
-		21FFCCB82C2966C200BD543A /* UIColor Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB72C2966C200BD543A /* UIColor Ext.swift */; };
-		21FFCCBA2C2967CE00BD543A /* Dictionary Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB92C2967CE00BD543A /* Dictionary Ext.swift */; };
-		21FFCCBC2C29681400BD543A /* UIView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBB2C29681400BD543A /* UIView Ext.swift */; };
-		21FFCCBE2C296A6D00BD543A /* Data Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBD2C296A6D00BD543A /* Data Ext.swift */; };
-		21FFCCC02C296AC300BD543A /* UIViewController Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCBF2C296AC300BD543A /* UIViewController Ext.swift */; };
-		21FFCCC22C296DC900BD543A /* LKUserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC12C296DC900BD543A /* LKUserDefaultsWrapper.swift */; };
-		21FFCCC42C296ED800BD543A /* UIStackView Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC32C296ED800BD543A /* UIStackView Ext.swift */; };
-		21FFCCC62C296FA200BD543A /* LKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC52C296FA200BD543A /* LKCell.swift */; };
-		21FFCCC92C2970DF00BD543A /* LKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCC82C2970DF00BD543A /* LKBaseViewController.swift */; };
-		21FFCCD02C29717700BD543A /* LKBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCCB2C29717700BD543A /* LKBaseView.swift */; };
-		21FFCCD22C29717700BD543A /* LKBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCCD2C29717700BD543A /* LKBaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,20 +114,6 @@
 			remoteGlobalIDString = 0CE78EE72C2FFE1C00B4284B;
 			remoteInfo = LongFirebase;
 		};
-		0CE78F392C30009000B4284B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21FFCC822C29508A00BD543A;
-			remoteInfo = LonginesKit;
-		};
-		21FFCCB02C295DF200BD543A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21FFCC822C29508A00BD543A;
-			remoteInfo = LonginesKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -140,7 +123,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				21FFCCAF2C295DF200BD543A /* LonginesKit.framework in Embed Frameworks */,
 				0CE78EFE2C2FFE1C00B4284B /* LongFirebase.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -149,6 +131,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C6B884D2C3002FD00CA41AF /* LonginesKit copy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "LonginesKit copy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C898A7C2C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableServiceProviderProtocol.swift; sourceTree = "<group>"; };
 		0C898A7D2C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableApplicationDelegate.swift; sourceTree = "<group>"; };
 		0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableApplicationDelegateService.swift; sourceTree = "<group>"; };
@@ -193,7 +176,6 @@
 		0CE78EEB2C2FFE1C00B4284B /* LongFirebase.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LongFirebase.docc; sourceTree = "<group>"; };
 		0CE78EF12C2FFE1C00B4284B /* LongFirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongFirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE78EF82C2FFE1C00B4284B /* LongFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongFirebaseTests.swift; sourceTree = "<group>"; };
-		21FFCC832C29508A00BD543A /* LonginesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFCC862C29508A00BD543A /* LonginesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonginesKit.h; sourceTree = "<group>"; };
 		21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppAppearance.swift; sourceTree = "<group>"; };
 		21FFCC992C295D9000BD543A /* AppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +200,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C6B88482C3002FD00CA41AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CE78EC52C2FFCE200B4284B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,7 +258,6 @@
 				0CE78F0D2C2FFEA800B4284B /* FirebaseCore.xcframework in Frameworks */,
 				0CE78F2F2C2FFEA900B4284B /* Promises.xcframework in Frameworks */,
 				0CE78F072C2FFEA800B4284B /* FBLPromises.xcframework in Frameworks */,
-				0CE78F372C30009000B4284B /* LonginesKit.framework in Frameworks */,
 				0CE78F052C2FFEA800B4284B /* Protobuf.framework in Frameworks */,
 				0CE78F0F2C2FFEA800B4284B /* FirebaseCoreExtension.xcframework in Frameworks */,
 				0CE78F2B2C2FFEA900B4284B /* Firebase.framework in Frameworks */,
@@ -288,18 +276,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21FFCC802C29508A00BD543A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		21FFCC962C295D9000BD543A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21FFCCAE2C295DF200BD543A /* LonginesKit.framework in Frameworks */,
 				0CE78EFD2C2FFE1C00B4284B /* LongFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,11 +386,11 @@
 		21FFCC842C29508A00BD543A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21FFCC832C29508A00BD543A /* LonginesKit.framework */,
 				21FFCC992C295D9000BD543A /* AppSample.app */,
 				0CE78EE22C2FFCE200B4284B /* LonginesFirebase.framework */,
 				0CE78EE82C2FFE1C00B4284B /* LongFirebase.framework */,
 				0CE78EF12C2FFE1C00B4284B /* LongFirebaseTests.xctest */,
+				0C6B884D2C3002FD00CA41AF /* LonginesKit copy.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -479,6 +459,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0C6B88332C3002FD00CA41AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6B88342C3002FD00CA41AF /* LonginesKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CE78EBD2C2FFCE200B4284B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,17 +483,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21FFCC7E2C29508A00BD543A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21FFCC872C29508A00BD543A /* LonginesKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0C6B88322C3002FD00CA41AF /* LonginesKit copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6B884A2C3002FD00CA41AF /* Build configuration list for PBXNativeTarget "LonginesKit copy" */;
+			buildPhases = (
+				0C6B88332C3002FD00CA41AF /* Headers */,
+				0C6B88352C3002FD00CA41AF /* Sources */,
+				0C6B88482C3002FD00CA41AF /* Frameworks */,
+				0C6B88492C3002FD00CA41AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LonginesKit copy";
+			productName = LonginesKit;
+			productReference = 0C6B884D2C3002FD00CA41AF /* LonginesKit copy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		0CE78EBC2C2FFCE200B4284B /* LonginesFirebase */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CE78EDF2C2FFCE200B4284B /* Build configuration list for PBXNativeTarget "LonginesFirebase" */;
@@ -536,7 +534,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0CE78F3A2C30009000B4284B /* PBXTargetDependency */,
 			);
 			name = LongFirebase;
 			productName = LongFirebase;
@@ -562,24 +559,6 @@
 			productReference = 0CE78EF12C2FFE1C00B4284B /* LongFirebaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		21FFCC822C29508A00BD543A /* LonginesKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21FFCC8A2C29508A00BD543A /* Build configuration list for PBXNativeTarget "LonginesKit" */;
-			buildPhases = (
-				21FFCC7E2C29508A00BD543A /* Headers */,
-				21FFCC7F2C29508A00BD543A /* Sources */,
-				21FFCC802C29508A00BD543A /* Frameworks */,
-				21FFCC812C29508A00BD543A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LonginesKit;
-			productName = LonginesKit;
-			productReference = 21FFCC832C29508A00BD543A /* LonginesKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		21FFCC982C295D9000BD543A /* AppSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21FFCCAA2C295D9200BD543A /* Build configuration list for PBXNativeTarget "AppSample" */;
@@ -592,7 +571,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				21FFCCB12C295DF200BD543A /* PBXTargetDependency */,
 				0CE78EFC2C2FFE1C00B4284B /* PBXTargetDependency */,
 			);
 			name = AppSample;
@@ -617,10 +595,6 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 21FFCC982C295D9000BD543A;
 					};
-					21FFCC822C29508A00BD543A = {
-						CreatedOnToolsVersion = 15.2;
-						LastSwiftMigration = 1520;
-					};
 					21FFCC982C295D9000BD543A = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -640,15 +614,22 @@
 			projectRoot = "";
 			targets = (
 				21FFCC982C295D9000BD543A /* AppSample */,
-				21FFCC822C29508A00BD543A /* LonginesKit */,
 				0CE78EBC2C2FFCE200B4284B /* LonginesFirebase */,
 				0CE78EE72C2FFE1C00B4284B /* LongFirebase */,
 				0CE78EF02C2FFE1C00B4284B /* LongFirebaseTests */,
+				0C6B88322C3002FD00CA41AF /* LonginesKit copy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C6B88492C3002FD00CA41AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CE78EDE2C2FFCE200B4284B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -670,13 +651,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21FFCC812C29508A00BD543A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		21FFCC972C295D9000BD543A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -689,6 +663,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C6B88352C3002FD00CA41AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6B88362C3002FD00CA41AF /* LKBaseView.swift in Sources */,
+				0C6B88372C3002FD00CA41AF /* LKAppAppearance.swift in Sources */,
+				0C6B88382C3002FD00CA41AF /* LKPluggableApplicationDelegateService.swift in Sources */,
+				0C6B88392C3002FD00CA41AF /* LKUserDefaultsWrapper.swift in Sources */,
+				0C6B883A2C3002FD00CA41AF /* UIStackView Ext.swift in Sources */,
+				0C6B883B2C3002FD00CA41AF /* Bundle Ext.swift in Sources */,
+				0C6B883C2C3002FD00CA41AF /* LKPluggableTool.swift in Sources */,
+				0C6B883D2C3002FD00CA41AF /* UIColor Ext.swift in Sources */,
+				0C6B883E2C3002FD00CA41AF /* UIViewController Ext.swift in Sources */,
+				0C6B883F2C3002FD00CA41AF /* UIView Ext.swift in Sources */,
+				0C6B88402C3002FD00CA41AF /* LKPluggableApplicationDelegate.swift in Sources */,
+				0C6B88412C3002FD00CA41AF /* LKLoggingPrint.swift in Sources */,
+				0C6B88422C3002FD00CA41AF /* LKPluggableServiceProviderProtocol.swift in Sources */,
+				0C6B88432C3002FD00CA41AF /* Data Ext.swift in Sources */,
+				0C6B88442C3002FD00CA41AF /* LKBaseNavigationController.swift in Sources */,
+				0C6B88452C3002FD00CA41AF /* LKCell.swift in Sources */,
+				0C6B88462C3002FD00CA41AF /* LKBaseViewController.swift in Sources */,
+				0C6B88472C3002FD00CA41AF /* Dictionary Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CE78EBF2C2FFCE200B4284B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -714,31 +713,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE78EF92C2FFE1C00B4284B /* LongFirebaseTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		21FFCC7F2C29508A00BD543A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21FFCCD02C29717700BD543A /* LKBaseView.swift in Sources */,
-				21FFCC902C29510000BD543A /* LKAppAppearance.swift in Sources */,
-				0C898A822C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift in Sources */,
-				21FFCCC22C296DC900BD543A /* LKUserDefaultsWrapper.swift in Sources */,
-				21FFCCC42C296ED800BD543A /* UIStackView Ext.swift in Sources */,
-				21FFCCB62C29661200BD543A /* Bundle Ext.swift in Sources */,
-				0C898A832C2EB11B00296E0B /* LKPluggableTool.swift in Sources */,
-				21FFCCB82C2966C200BD543A /* UIColor Ext.swift in Sources */,
-				21FFCCC02C296AC300BD543A /* UIViewController Ext.swift in Sources */,
-				21FFCCBC2C29681400BD543A /* UIView Ext.swift in Sources */,
-				0C898A812C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift in Sources */,
-				21FFCCB42C2964D200BD543A /* LKLoggingPrint.swift in Sources */,
-				0C898A802C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift in Sources */,
-				21FFCCBE2C296A6D00BD543A /* Data Ext.swift in Sources */,
-				21FFCCD22C29717700BD543A /* LKBaseNavigationController.swift in Sources */,
-				21FFCCC62C296FA200BD543A /* LKCell.swift in Sources */,
-				21FFCCC92C2970DF00BD543A /* LKBaseViewController.swift in Sources */,
-				21FFCCBA2C2967CE00BD543A /* Dictionary Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,17 +744,6 @@
 			target = 0CE78EE72C2FFE1C00B4284B /* LongFirebase */;
 			targetProxy = 0CE78EFB2C2FFE1C00B4284B /* PBXContainerItemProxy */;
 		};
-		0CE78F3A2C30009000B4284B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = 21FFCC822C29508A00BD543A /* LonginesKit */;
-			targetProxy = 0CE78F392C30009000B4284B /* PBXContainerItemProxy */;
-		};
-		21FFCCB12C295DF200BD543A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 21FFCC822C29508A00BD543A /* LonginesKit */;
-			targetProxy = 21FFCCB02C295DF200BD543A /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -795,6 +758,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C6B884B2C3002FD00CA41AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0C6B884C2C3002FD00CA41AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = J4D7TC83XB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.LonginesKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		0CE78EE02C2FFCE200B4284B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1132,86 +1175,6 @@
 			};
 			name = Release;
 		};
-		21FFCC8B2C29508A00BD543A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		21FFCC8C2C29508A00BD543A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = J4D7TC83XB;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core.LonginesKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 		21FFCCAB2C295D9200BD543A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1285,6 +1248,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C6B884A2C3002FD00CA41AF /* Build configuration list for PBXNativeTarget "LonginesKit copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6B884B2C3002FD00CA41AF /* Debug */,
+				0C6B884C2C3002FD00CA41AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0CE78EDF2C2FFCE200B4284B /* Build configuration list for PBXNativeTarget "LonginesFirebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1317,15 +1289,6 @@
 			buildConfigurations = (
 				21FFCC882C29508A00BD543A /* Debug */,
 				21FFCC892C29508A00BD543A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		21FFCC8A2C29508A00BD543A /* Build configuration list for PBXNativeTarget "LonginesKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				21FFCC8B2C29508A00BD543A /* Debug */,
-				21FFCC8C2C29508A00BD543A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
