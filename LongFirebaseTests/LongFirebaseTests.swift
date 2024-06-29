@@ -1,14 +1,14 @@
 //
-//  LonginesFirebaseTests.swift
-//  LonginesFirebaseTests
+//  LongFirebaseTests.swift
+//  LongFirebaseTests
 //
-//  Created by liam on 28/6/24.
+//  Created by liam on 29/6/24.
 //
 
 import XCTest
-@testable import LonginesFirebase
+@testable import LongFirebase
 
-final class LonginesFirebaseTests: XCTestCase {
+final class LongFirebaseTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
