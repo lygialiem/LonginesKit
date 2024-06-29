@@ -11,39 +11,37 @@
 		0C898A812C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7D2C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift */; };
 		0C898A822C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */; };
 		0C898A832C2EB11B00296E0B /* LKPluggableTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7F2C2EB11B00296E0B /* LKPluggableTool.swift */; };
-		0C898A942C2ED2C900296E0B /* LonginesFirebase.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A932C2ED2C900296E0B /* LonginesFirebase.docc */; };
-		0C898AA22C2ED2CA00296E0B /* LonginesFirebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C898A922C2ED2C900296E0B /* LonginesFirebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C898AA52C2ED2CA00296E0B /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898A902C2ED2C900296E0B /* LonginesFirebase.framework */; };
-		0C898AA62C2ED2CA00296E0B /* LonginesFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898A902C2ED2C900296E0B /* LonginesFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C898AE62C2F1E0100296E0B /* LKRemoteConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE32C2F1E0100296E0B /* LKRemoteConfigPlugin.swift */; };
-		0C898AE72C2F1E0100296E0B /* LKUserPropertyPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE42C2F1E0100296E0B /* LKUserPropertyPlugin.swift */; };
-		0C898AE82C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE52C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift */; };
-		0C898B592C2F261C00296E0B /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
 		0C898B5A2C2F261C00296E0B /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
-		0C898B632C2F298A00296E0B /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB32C2ED2E500296E0B /* FBLPromises.xcframework */; };
-		0C898B652C2F298A00296E0B /* FirebaseABTesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB42C2ED2E500296E0B /* FirebaseABTesting.xcframework */; };
-		0C898B672C2F298A00296E0B /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AEB2C2F1EBA00296E0B /* FirebaseAnalytics.xcframework */; };
-		0C898B692C2F298A00296E0B /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB52C2ED2E500296E0B /* FirebaseCore.xcframework */; };
-		0C898B6B2C2F298A00296E0B /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB62C2ED2E500296E0B /* FirebaseCoreExtension.xcframework */; };
-		0C898B6D2C2F298A00296E0B /* FirebaseCoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B4E2C2F235F00296E0B /* FirebaseCoreInternal.xcframework */; };
-		0C898B6F2C2F298B00296E0B /* FirebaseCrashlytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B4F2C2F235F00296E0B /* FirebaseCrashlytics.xcframework */; };
-		0C898B712C2F298B00296E0B /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB72C2ED2E500296E0B /* FirebaseInstallations.xcframework */; };
-		0C898B732C2F298B00296E0B /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB82C2ED2E500296E0B /* FirebaseMessaging.xcframework */; };
-		0C898B752C2F298B00296E0B /* FirebaseRemoteConfig.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AF52C2F1F1300296E0B /* FirebaseRemoteConfig.xcframework */; };
-		0C898B772C2F298B00296E0B /* FirebaseRemoteConfigInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB92C2ED2E500296E0B /* FirebaseRemoteConfigInterop.xcframework */; };
-		0C898B792C2F298B00296E0B /* FirebaseSessions.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B4D2C2F235F00296E0B /* FirebaseSessions.xcframework */; };
-		0C898B7B2C2F298B00296E0B /* FirebaseSharedSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B502C2F235F00296E0B /* FirebaseSharedSwift.xcframework */; };
-		0C898B7D2C2F298B00296E0B /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABA2C2ED2E500296E0B /* GoogleAppMeasurement.xcframework */; };
-		0C898B7F2C2F298B00296E0B /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABB2C2ED2E500296E0B /* GoogleAppMeasurementIdentitySupport.xcframework */; };
-		0C898B812C2F298B00296E0B /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABC2C2ED2E500296E0B /* GoogleDataTransport.xcframework */; };
-		0C898B832C2F298B00296E0B /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABD2C2ED2E500296E0B /* GoogleMobileAds.xcframework */; };
-		0C898B852C2F298B00296E0B /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABE2C2ED2E500296E0B /* GoogleUtilities.xcframework */; };
-		0C898B872C2F298B00296E0B /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABF2C2ED2E500296E0B /* nanopb.xcframework */; };
-		0C898B892C2F298C00296E0B /* Promises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AC02C2ED2E500296E0B /* Promises.xcframework */; };
-		0C898B8B2C2F298C00296E0B /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AC12C2ED2E500296E0B /* UserMessagingPlatform.xcframework */; };
-		0C898B8F2C2F29D700296E0B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B8E2C2F29D100296E0B /* libc++.tbd */; };
-		0C898B912C2F29E700296E0B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B902C2F29E000296E0B /* libsqlite3.tbd */; };
-		0C898B932C2F29F500296E0B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B922C2F29F000296E0B /* libz.tbd */; };
+		0CE78EBE2C2FFCE200B4284B /* LonginesFirebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C898A922C2ED2C900296E0B /* LonginesFirebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CE78EC02C2FFCE200B4284B /* LKFirebaseConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE52C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift */; };
+		0CE78EC12C2FFCE200B4284B /* LonginesFirebase.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A932C2ED2C900296E0B /* LonginesFirebase.docc */; };
+		0CE78EC22C2FFCE200B4284B /* LKLoggingPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */; };
+		0CE78EC32C2FFCE200B4284B /* LKUserPropertyPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE42C2F1E0100296E0B /* LKUserPropertyPlugin.swift */; };
+		0CE78EC42C2FFCE200B4284B /* LKRemoteConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE32C2F1E0100296E0B /* LKRemoteConfigPlugin.swift */; };
+		0CE78EC62C2FFCE200B4284B /* FirebaseRemoteConfig.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AF52C2F1F1300296E0B /* FirebaseRemoteConfig.xcframework */; };
+		0CE78EC72C2FFCE200B4284B /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABB2C2ED2E500296E0B /* GoogleAppMeasurementIdentitySupport.xcframework */; };
+		0CE78EC82C2FFCE200B4284B /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABA2C2ED2E500296E0B /* GoogleAppMeasurement.xcframework */; };
+		0CE78EC92C2FFCE200B4284B /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABF2C2ED2E500296E0B /* nanopb.xcframework */; };
+		0CE78ECA2C2FFCE200B4284B /* FirebaseSharedSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B502C2F235F00296E0B /* FirebaseSharedSwift.xcframework */; };
+		0CE78ECB2C2FFCE200B4284B /* FirebaseCrashlytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B4F2C2F235F00296E0B /* FirebaseCrashlytics.xcframework */; };
+		0CE78ECC2C2FFCE200B4284B /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABC2C2ED2E500296E0B /* GoogleDataTransport.xcframework */; };
+		0CE78ECD2C2FFCE200B4284B /* FirebaseRemoteConfigInterop.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB92C2ED2E500296E0B /* FirebaseRemoteConfigInterop.xcframework */; };
+		0CE78ECE2C2FFCE200B4284B /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AC12C2ED2E500296E0B /* UserMessagingPlatform.xcframework */; };
+		0CE78ECF2C2FFCE200B4284B /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABE2C2ED2E500296E0B /* GoogleUtilities.xcframework */; };
+		0CE78ED02C2FFCE200B4284B /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898ABD2C2ED2E500296E0B /* GoogleMobileAds.xcframework */; };
+		0CE78ED12C2FFCE200B4284B /* FirebaseABTesting.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB42C2ED2E500296E0B /* FirebaseABTesting.xcframework */; };
+		0CE78ED22C2FFCE200B4284B /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AEB2C2F1EBA00296E0B /* FirebaseAnalytics.xcframework */; };
+		0CE78ED32C2FFCE200B4284B /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB52C2ED2E500296E0B /* FirebaseCore.xcframework */; };
+		0CE78ED42C2FFCE200B4284B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B8E2C2F29D100296E0B /* libc++.tbd */; };
+		0CE78ED52C2FFCE200B4284B /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB32C2ED2E500296E0B /* FBLPromises.xcframework */; };
+		0CE78ED62C2FFCE200B4284B /* Promises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AC02C2ED2E500296E0B /* Promises.xcframework */; };
+		0CE78ED72C2FFCE200B4284B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B902C2F29E000296E0B /* libsqlite3.tbd */; };
+		0CE78ED82C2FFCE200B4284B /* FirebaseCoreExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB62C2ED2E500296E0B /* FirebaseCoreExtension.xcframework */; };
+		0CE78ED92C2FFCE200B4284B /* FirebaseCoreInternal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B4E2C2F235F00296E0B /* FirebaseCoreInternal.xcframework */; };
+		0CE78EDA2C2FFCE200B4284B /* FirebaseSessions.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B4D2C2F235F00296E0B /* FirebaseSessions.xcframework */; };
+		0CE78EDB2C2FFCE200B4284B /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB72C2ED2E500296E0B /* FirebaseInstallations.xcframework */; };
+		0CE78EDC2C2FFCE200B4284B /* FirebaseMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AB82C2ED2E500296E0B /* FirebaseMessaging.xcframework */; };
+		0CE78EDD2C2FFCE200B4284B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898B922C2F29F000296E0B /* libz.tbd */; };
 		21FFCC872C29508A00BD543A /* LonginesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FFCC862C29508A00BD543A /* LonginesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21FFCC902C29510000BD543A /* LKAppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */; };
 		21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9B2C295D9000BD543A /* AppDelegate.swift */; };
@@ -68,13 +66,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C898AA32C2ED2CA00296E0B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C898A8F2C2ED2C900296E0B;
-			remoteInfo = LonginesFirebase;
-		};
 		21FFCCB02C295DF200BD543A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
@@ -91,7 +82,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0C898AA62C2ED2CA00296E0B /* LonginesFirebase.framework in Embed Frameworks */,
 				21FFCCAF2C295DF200BD543A /* LonginesKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -104,7 +94,6 @@
 		0C898A7D2C2EB11B00296E0B /* LKPluggableApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableApplicationDelegate.swift; sourceTree = "<group>"; };
 		0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableApplicationDelegateService.swift; sourceTree = "<group>"; };
 		0C898A7F2C2EB11B00296E0B /* LKPluggableTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableTool.swift; sourceTree = "<group>"; };
-		0C898A902C2ED2C900296E0B /* LonginesFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C898A922C2ED2C900296E0B /* LonginesFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonginesFirebase.h; sourceTree = "<group>"; };
 		0C898A932C2ED2C900296E0B /* LonginesFirebase.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LonginesFirebase.docc; sourceTree = "<group>"; };
 		0C898AA02C2ED2CA00296E0B /* LonginesFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LonginesFirebaseTests.swift; sourceTree = "<group>"; };
@@ -140,6 +129,7 @@
 		0C898B8E2C2F29D100296E0B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0C898B902C2F29E000296E0B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0C898B922C2F29F000296E0B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0CE78EE22C2FFCE200B4284B /* LonginesFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFCC832C29508A00BD543A /* LonginesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFCC862C29508A00BD543A /* LonginesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonginesKit.h; sourceTree = "<group>"; };
 		21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppAppearance.swift; sourceTree = "<group>"; };
@@ -165,34 +155,34 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C898A8D2C2ED2C900296E0B /* Frameworks */ = {
+		0CE78EC52C2FFCE200B4284B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C898B752C2F298B00296E0B /* FirebaseRemoteConfig.xcframework in Frameworks */,
-				0C898B7F2C2F298B00296E0B /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
-				0C898B7D2C2F298B00296E0B /* GoogleAppMeasurement.xcframework in Frameworks */,
-				0C898B872C2F298B00296E0B /* nanopb.xcframework in Frameworks */,
-				0C898B7B2C2F298B00296E0B /* FirebaseSharedSwift.xcframework in Frameworks */,
-				0C898B6F2C2F298B00296E0B /* FirebaseCrashlytics.xcframework in Frameworks */,
-				0C898B812C2F298B00296E0B /* GoogleDataTransport.xcframework in Frameworks */,
-				0C898B772C2F298B00296E0B /* FirebaseRemoteConfigInterop.xcframework in Frameworks */,
-				0C898B8B2C2F298C00296E0B /* UserMessagingPlatform.xcframework in Frameworks */,
-				0C898B852C2F298B00296E0B /* GoogleUtilities.xcframework in Frameworks */,
-				0C898B832C2F298B00296E0B /* GoogleMobileAds.xcframework in Frameworks */,
-				0C898B652C2F298A00296E0B /* FirebaseABTesting.xcframework in Frameworks */,
-				0C898B672C2F298A00296E0B /* FirebaseAnalytics.xcframework in Frameworks */,
-				0C898B692C2F298A00296E0B /* FirebaseCore.xcframework in Frameworks */,
-				0C898B8F2C2F29D700296E0B /* libc++.tbd in Frameworks */,
-				0C898B632C2F298A00296E0B /* FBLPromises.xcframework in Frameworks */,
-				0C898B892C2F298C00296E0B /* Promises.xcframework in Frameworks */,
-				0C898B912C2F29E700296E0B /* libsqlite3.tbd in Frameworks */,
-				0C898B6B2C2F298A00296E0B /* FirebaseCoreExtension.xcframework in Frameworks */,
-				0C898B6D2C2F298A00296E0B /* FirebaseCoreInternal.xcframework in Frameworks */,
-				0C898B792C2F298B00296E0B /* FirebaseSessions.xcframework in Frameworks */,
-				0C898B712C2F298B00296E0B /* FirebaseInstallations.xcframework in Frameworks */,
-				0C898B732C2F298B00296E0B /* FirebaseMessaging.xcframework in Frameworks */,
-				0C898B932C2F29F500296E0B /* libz.tbd in Frameworks */,
+				0CE78EC62C2FFCE200B4284B /* FirebaseRemoteConfig.xcframework in Frameworks */,
+				0CE78EC72C2FFCE200B4284B /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
+				0CE78EC82C2FFCE200B4284B /* GoogleAppMeasurement.xcframework in Frameworks */,
+				0CE78EC92C2FFCE200B4284B /* nanopb.xcframework in Frameworks */,
+				0CE78ECA2C2FFCE200B4284B /* FirebaseSharedSwift.xcframework in Frameworks */,
+				0CE78ECB2C2FFCE200B4284B /* FirebaseCrashlytics.xcframework in Frameworks */,
+				0CE78ECC2C2FFCE200B4284B /* GoogleDataTransport.xcframework in Frameworks */,
+				0CE78ECD2C2FFCE200B4284B /* FirebaseRemoteConfigInterop.xcframework in Frameworks */,
+				0CE78ECE2C2FFCE200B4284B /* UserMessagingPlatform.xcframework in Frameworks */,
+				0CE78ECF2C2FFCE200B4284B /* GoogleUtilities.xcframework in Frameworks */,
+				0CE78ED02C2FFCE200B4284B /* GoogleMobileAds.xcframework in Frameworks */,
+				0CE78ED12C2FFCE200B4284B /* FirebaseABTesting.xcframework in Frameworks */,
+				0CE78ED22C2FFCE200B4284B /* FirebaseAnalytics.xcframework in Frameworks */,
+				0CE78ED32C2FFCE200B4284B /* FirebaseCore.xcframework in Frameworks */,
+				0CE78ED42C2FFCE200B4284B /* libc++.tbd in Frameworks */,
+				0CE78ED52C2FFCE200B4284B /* FBLPromises.xcframework in Frameworks */,
+				0CE78ED62C2FFCE200B4284B /* Promises.xcframework in Frameworks */,
+				0CE78ED72C2FFCE200B4284B /* libsqlite3.tbd in Frameworks */,
+				0CE78ED82C2FFCE200B4284B /* FirebaseCoreExtension.xcframework in Frameworks */,
+				0CE78ED92C2FFCE200B4284B /* FirebaseCoreInternal.xcframework in Frameworks */,
+				0CE78EDA2C2FFCE200B4284B /* FirebaseSessions.xcframework in Frameworks */,
+				0CE78EDB2C2FFCE200B4284B /* FirebaseInstallations.xcframework in Frameworks */,
+				0CE78EDC2C2FFCE200B4284B /* FirebaseMessaging.xcframework in Frameworks */,
+				0CE78EDD2C2FFCE200B4284B /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +197,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C898AA52C2ED2CA00296E0B /* LonginesFirebase.framework in Frameworks */,
 				21FFCCAE2C295DF200BD543A /* LonginesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +295,7 @@
 			children = (
 				21FFCC832C29508A00BD543A /* LonginesKit.framework */,
 				21FFCC992C295D9000BD543A /* AppSample.app */,
-				0C898A902C2ED2C900296E0B /* LonginesFirebase.framework */,
+				0CE78EE22C2FFCE200B4284B /* LonginesFirebase.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,11 +364,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C898A8B2C2ED2C900296E0B /* Headers */ = {
+		0CE78EBD2C2FFCE200B4284B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C898AA22C2ED2CA00296E0B /* LonginesFirebase.h in Headers */,
+				0CE78EBE2C2FFCE200B4284B /* LonginesFirebase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,14 +383,14 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C898A8F2C2ED2C900296E0B /* LonginesFirebase */ = {
+		0CE78EBC2C2FFCE200B4284B /* LonginesFirebase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C898AA72C2ED2CA00296E0B /* Build configuration list for PBXNativeTarget "LonginesFirebase" */;
+			buildConfigurationList = 0CE78EDF2C2FFCE200B4284B /* Build configuration list for PBXNativeTarget "LonginesFirebase" */;
 			buildPhases = (
-				0C898A8B2C2ED2C900296E0B /* Headers */,
-				0C898A8C2C2ED2C900296E0B /* Sources */,
-				0C898A8D2C2ED2C900296E0B /* Frameworks */,
-				0C898A8E2C2ED2C900296E0B /* Resources */,
+				0CE78EBD2C2FFCE200B4284B /* Headers */,
+				0CE78EBF2C2FFCE200B4284B /* Sources */,
+				0CE78EC52C2FFCE200B4284B /* Frameworks */,
+				0CE78EDE2C2FFCE200B4284B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -409,7 +398,7 @@
 			);
 			name = LonginesFirebase;
 			productName = LonginesFirebase;
-			productReference = 0C898A902C2ED2C900296E0B /* LonginesFirebase.framework */;
+			productReference = 0CE78EE22C2FFCE200B4284B /* LonginesFirebase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		21FFCC822C29508A00BD543A /* LonginesKit */ = {
@@ -443,7 +432,6 @@
 			);
 			dependencies = (
 				21FFCCB12C295DF200BD543A /* PBXTargetDependency */,
-				0C898AA42C2ED2CA00296E0B /* PBXTargetDependency */,
 			);
 			name = AppSample;
 			productName = AppSample;
@@ -460,9 +448,6 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					0C898A8F2C2ED2C900296E0B = {
-						CreatedOnToolsVersion = 15.3;
-					};
 					21FFCC822C29508A00BD543A = {
 						CreatedOnToolsVersion = 15.2;
 						LastSwiftMigration = 1520;
@@ -487,13 +472,13 @@
 			targets = (
 				21FFCC982C295D9000BD543A /* AppSample */,
 				21FFCC822C29508A00BD543A /* LonginesKit */,
-				0C898A8F2C2ED2C900296E0B /* LonginesFirebase */,
+				0CE78EBC2C2FFCE200B4284B /* LonginesFirebase */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0C898A8E2C2ED2C900296E0B /* Resources */ = {
+		0CE78EDE2C2FFCE200B4284B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,15 +504,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C898A8C2C2ED2C900296E0B /* Sources */ = {
+		0CE78EBF2C2FFCE200B4284B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C898AE82C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift in Sources */,
-				0C898A942C2ED2C900296E0B /* LonginesFirebase.docc in Sources */,
-				0C898B592C2F261C00296E0B /* LKLoggingPrint.swift in Sources */,
-				0C898AE72C2F1E0100296E0B /* LKUserPropertyPlugin.swift in Sources */,
-				0C898AE62C2F1E0100296E0B /* LKRemoteConfigPlugin.swift in Sources */,
+				0CE78EC02C2FFCE200B4284B /* LKFirebaseConfigPlugin.swift in Sources */,
+				0CE78EC12C2FFCE200B4284B /* LonginesFirebase.docc in Sources */,
+				0CE78EC22C2FFCE200B4284B /* LKLoggingPrint.swift in Sources */,
+				0CE78EC32C2FFCE200B4284B /* LKUserPropertyPlugin.swift in Sources */,
+				0CE78EC42C2FFCE200B4284B /* LKRemoteConfigPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,11 +554,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C898AA42C2ED2CA00296E0B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C898A8F2C2ED2C900296E0B /* LonginesFirebase */;
-			targetProxy = 0C898AA32C2ED2CA00296E0B /* PBXContainerItemProxy */;
-		};
 		21FFCCB12C295DF200BD543A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 21FFCC822C29508A00BD543A /* LonginesKit */;
@@ -593,7 +573,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0C898AA82C2ED2CA00296E0B /* Debug */ = {
+		0CE78EE02C2FFCE200B4284B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -622,7 +602,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.base.teleprompter.LonginesFirebase;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -635,7 +615,7 @@
 			};
 			name = Debug;
 		};
-		0C898AA92C2ED2CA00296E0B /* Release */ = {
+		0CE78EE12C2FFCE200B4284B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -664,7 +644,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.base.teleprompter.LonginesFirebase;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -952,11 +932,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C898AA72C2ED2CA00296E0B /* Build configuration list for PBXNativeTarget "LonginesFirebase" */ = {
+		0CE78EDF2C2FFCE200B4284B /* Build configuration list for PBXNativeTarget "LonginesFirebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C898AA82C2ED2CA00296E0B /* Debug */,
-				0C898AA92C2ED2CA00296E0B /* Release */,
+				0CE78EE02C2FFCE200B4284B /* Debug */,
+				0CE78EE12C2FFCE200B4284B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
