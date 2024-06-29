@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0CE78EE72C2FFE1C00B4284B"
-               BuildableName = "LongFirebase.framework"
-               BlueprintName = "LongFirebase"
+               BuildableName = "LonginesFirebase.framework"
+               BlueprintName = "LonginesFirebase"
                ReferencedContainer = "container:LonginesKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CE78EE72C2FFE1C00B4284B"
-            BuildableName = "LongFirebase.framework"
-            BlueprintName = "LongFirebase"
+            BuildableName = "LonginesFirebase.framework"
+            BlueprintName = "LonginesFirebase"
             ReferencedContainer = "container:LonginesKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

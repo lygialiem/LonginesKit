@@ -50,8 +50,8 @@
 		0C6B88832C3038E000CA41AF /* LKPluggableApplicationDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */; };
 		0CE78EEC2C2FFE1C00B4284B /* LongFirebase.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0CE78EEB2C2FFE1C00B4284B /* LongFirebase.docc */; };
 		0CE78EFA2C2FFE1C00B4284B /* LongFirebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE78EEA2C2FFE1C00B4284B /* LongFirebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0CE78EFD2C2FFE1C00B4284B /* LongFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LongFirebase.framework */; };
-		0CE78EFE2C2FFE1C00B4284B /* LongFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LongFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CE78EFD2C2FFE1C00B4284B /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; };
+		0CE78EFE2C2FFE1C00B4284B /* LonginesFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CE78F342C30004A00B4284B /* LKFirebaseConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE52C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift */; };
 		0CE78F352C30004A00B4284B /* LKRemoteConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE32C2F1E0100296E0B /* LKRemoteConfigPlugin.swift */; };
 		0CE78F362C30004A00B4284B /* LKUserPropertyPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE42C2F1E0100296E0B /* LKUserPropertyPlugin.swift */; };
@@ -85,7 +85,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0CE78EFE2C2FFE1C00B4284B /* LongFirebase.framework in Embed Frameworks */,
+				0CE78EFE2C2FFE1C00B4284B /* LonginesFirebase.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +132,7 @@
 		0C898B8E2C2F29D100296E0B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0C898B902C2F29E000296E0B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0C898B922C2F29F000296E0B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		0CE78EE82C2FFE1C00B4284B /* LongFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LongFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE78EEA2C2FFE1C00B4284B /* LongFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongFirebase.h; sourceTree = "<group>"; };
 		0CE78EEB2C2FFE1C00B4284B /* LongFirebase.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LongFirebase.docc; sourceTree = "<group>"; };
 		0CE78EF82C2FFE1C00B4284B /* LongFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongFirebaseTests.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE78EFD2C2FFE1C00B4284B /* LongFirebase.framework in Frameworks */,
+				0CE78EFD2C2FFE1C00B4284B /* LonginesFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				21FFCC992C295D9000BD543A /* AppSample.app */,
-				0CE78EE82C2FFE1C00B4284B /* LongFirebase.framework */,
+				0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */,
 				0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */,
 			);
 			name = Products;
@@ -414,9 +414,9 @@
 			productReference = 0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0CE78EE72C2FFE1C00B4284B /* LongFirebase */ = {
+		0CE78EE72C2FFE1C00B4284B /* LonginesFirebase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CE78EFF2C2FFE1C00B4284B /* Build configuration list for PBXNativeTarget "LongFirebase" */;
+			buildConfigurationList = 0CE78EFF2C2FFE1C00B4284B /* Build configuration list for PBXNativeTarget "LonginesFirebase" */;
 			buildPhases = (
 				0CE78EE32C2FFE1C00B4284B /* Headers */,
 				0CE78EE42C2FFE1C00B4284B /* Sources */,
@@ -428,9 +428,9 @@
 			dependencies = (
 				0C6B88802C30057E00CA41AF /* PBXTargetDependency */,
 			);
-			name = LongFirebase;
+			name = LonginesFirebase;
 			productName = LongFirebase;
-			productReference = 0CE78EE82C2FFE1C00B4284B /* LongFirebase.framework */;
+			productReference = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		21FFCC982C295D9000BD543A /* AppSample */ = {
@@ -484,7 +484,7 @@
 			projectRoot = "";
 			targets = (
 				21FFCC982C295D9000BD543A /* AppSample */,
-				0CE78EE72C2FFE1C00B4284B /* LongFirebase */,
+				0CE78EE72C2FFE1C00B4284B /* LonginesFirebase */,
 				0C6B88322C3002FD00CA41AF /* LonginesKit */,
 			);
 		};
@@ -572,7 +572,7 @@
 		};
 		0CE78EFC2C2FFE1C00B4284B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0CE78EE72C2FFE1C00B4284B /* LongFirebase */;
+			target = 0CE78EE72C2FFE1C00B4284B /* LonginesFirebase */;
 			targetProxy = 0CE78EFB2C2FFE1C00B4284B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -964,7 +964,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CE78EFF2C2FFE1C00B4284B /* Build configuration list for PBXNativeTarget "LongFirebase" */ = {
+		0CE78EFF2C2FFE1C00B4284B /* Build configuration list for PBXNativeTarget "LonginesFirebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CE78F002C2FFE1C00B4284B /* Debug */,
