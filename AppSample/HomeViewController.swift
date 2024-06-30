@@ -23,6 +23,17 @@ class HomeViewController: LKBaseViewController {
     
     private lazy var purchaseButton = createButton(title: "Purchase IAP item")
     
+    private var interstitialPlugin = LKPluggableTool.queryAppDelegate(for: LKInterstitialAdsPlugin.self)
+    
+    private lazy var mainStackView: UIStackView = {
+        let stackView = UIStackView.init()
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.alignment = .fill
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
     private func createButton(title: String) -> UIButton {
         var config = UIButton.Configuration.filled()
         config.baseBackgroundColor = .brown
@@ -44,22 +55,20 @@ class HomeViewController: LKBaseViewController {
         
         view.backgroundColor = .lightGray
         
-        let stackView = UIStackView.init()
-        stackView.axis = .vertical
-        stackView.distribution = .fillEqually
-        stackView.alignment = .fill
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+       
         
-        view.addSubview(stackView)
-        stackView.addArrangedSubviews(showBannerAdButton, showInterstitialAdButton, purchaseButton)
+        view.addSubview(mainStackView)
+        mainStackView.addArrangedSubviews(showBannerAdButton, showInterstitialAdButton, purchaseButton)
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            mainStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            mainStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
         
-        
-
+        mainStackView.arrangedSubviews.forEach { view in
+            view.alpha = 0.5
+            view.isUserInteractionEnabled = false
+        }
     }
     
     override func visualize() {
@@ -67,7 +76,7 @@ class HomeViewController: LKBaseViewController {
         
         showInterstitialAdButton.addAction(.init(handler: { [weak self] _ in
             guard let self else { return }
-            
+            self.interstitialPlugin?.presentInterstitial(from: self, onDismiss: nil)
         }), for: .touchUpInside)
         
         
@@ -112,15 +121,10 @@ class HomeViewController: LKBaseViewController {
 private extension HomeViewController {
     
     func startBusiness() {
-        guard let iapPlugin else { return }
-        
-        // Qonverion Testing
-        if !iapPlugin.isPremiumUser {
-            Task {
-                let item = iapPlugin.productList.first!
-                let state = await iapPlugin.purchase(product: item.qonversionID)
-                print("== state:", state)
-            }
+        mainStackView.arrangedSubviews.forEach { view in
+            view.alpha = 1.0
+            view.isUserInteractionEnabled = true
         }
+        interstitialPlugin?.loadInterstitial()
     }
 }
