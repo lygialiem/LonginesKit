@@ -12,12 +12,18 @@ import LonginesKit
 
 public protocol LKAnalyticPluggable: LKPluggableApplicationDelegateService {
     var didSetupO: AnyPublisher<Bool, Never> { get }
+    
+    var appInstanceID: String? { get }
 }
 
 public class LKAnalyticPlugin: NSObject, LKAnalyticPluggable {
     
     public var didSetupO: AnyPublisher<Bool, Never> {
         didSetupS.eraseToAnyPublisher()
+    }
+    
+    public var appInstanceID: String? {
+        Analytics.appInstanceID()
     }
     
     private let didSetupS = CurrentValueSubject<Bool, Never>(false)
@@ -32,6 +38,7 @@ public class LKAnalyticPlugin: NSObject, LKAnalyticPluggable {
 }
 
 extension LKAnalyticPlugin {
+    
     public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         firebasePlugin.didConfigureO
             .filter{$0}
