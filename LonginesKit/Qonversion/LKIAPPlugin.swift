@@ -178,6 +178,7 @@ public extension LKIAPPlugin {
         }
     }
     
+    @discardableResult
     func purchase(product: String) async -> PurchaseState {
         await withCheckedContinuation { continuation in
             Qonversion.shared().purchase(product) { result, error, cancelled in
