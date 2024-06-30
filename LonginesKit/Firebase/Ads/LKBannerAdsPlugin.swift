@@ -12,8 +12,6 @@ import Combine
 
 public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService {
     
-    public static var bannerAdsID: String = "ca-app-pub-3940256099942544/2435281174" // test ID
-    
     public struct BannerInfo {
         let rootName: String
         let container: UIView
@@ -28,6 +26,14 @@ public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService 
     public enum Status {
         case didLayout(container: UIView)
         case didRemove
+    }
+    
+    private let id: String
+    
+    public init(id: String = "ca-app-pub-3940256099942544/2435281174") {
+        self.id = id
+        
+        super.init()
     }
 }
 
@@ -70,7 +76,7 @@ public extension LKBannerAdsPlugin {
         
         
         let bannerView = GADBannerView(adSize: GADAdSizeBanner)
-        bannerView.adUnitID = LKBannerAdsPlugin.bannerAdsID
+        bannerView.adUnitID = id
         bannerView.rootViewController = root
         bannerView.delegate = delegate
         bannerView.adSize = GADAdSizeBanner

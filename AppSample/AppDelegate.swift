@@ -34,7 +34,8 @@ class AppDelegate: LKPluggableApplicationDelegate {
             LKAnalyticPlugin.init(firebasePlugin: firebasePlugin),
             LKIAPPlugin.init(projectKey: "m1woJHYltNnj4JARHt8JJWA0ejZiel_x"),
             LKBannerAdsPlugin(),
-            LKInterstitialAdsPlugin()
+            LKInterstitialAdsPlugin(),
+            LKRewardedAdPlugin.init()
         ]
     }
     
