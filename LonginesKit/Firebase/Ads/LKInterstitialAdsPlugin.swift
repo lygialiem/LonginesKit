@@ -10,26 +10,35 @@ import Combine
 import GoogleMobileAds
 import LonginesKit
 
-public class LKInterstitialAdsPlugin: NSObject, LKPluggableApplicationDelegateService {
+public struct LKInterstitialAdConfig: LKAdConfigurable {
+    public var id: String
+}
+
+public class LKInterstitialAdsPlugin: NSObject, LKPluggableApplicationDelegateService, LKAdPluggable {
     
     private var interstitialAd: GADInterstitialAd?
     private var onDismiss: LKVoidAction?
     private let numberOfRetry = 3
     private var retryCounting = 0
     private let loadInteralInSeconds: TimeInterval = 60
-    private let id: String
+    private var cancellables = Set<AnyCancellable>.init()
+    public var config: LKAdvertisements
     
-    public init(id: String = "ca-app-pub-3940256099942544/4411468910") {
-        self.id = id
-        
+    required public init(config: LKAdvertisements) {
+        self.config = config
         super.init()
+    }
+    
+    public func updateConfig(_ config: LKAdvertisements) {
+        self.config = config
     }
 }
 
 public extension LKInterstitialAdsPlugin {
     
     func loadInterstitial() {
-        guard interstitialAd == nil else { return }
+        
+        guard let id = config.interstitialAdID, !id.isEmpty else { return }
         
         let request = GADRequest()
         

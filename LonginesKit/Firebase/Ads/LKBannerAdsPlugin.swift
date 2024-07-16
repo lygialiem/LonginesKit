@@ -10,7 +10,11 @@ import LonginesKit
 import GoogleMobileAds
 import Combine
 
-public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService {
+public struct LKBannerAdConfig: LKAdConfigurable {
+    public var id: String
+}
+
+public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService, LKAdPluggable {
     
     public struct BannerInfo {
         let rootName: String
@@ -22,18 +26,22 @@ public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService 
     private var bannerInfos = [BannerInfo]()
     private var subscriptions = [AnyCancellable]()
     private var completion: LKValueAction<Status>?
+    private var cancellables = Set<AnyCancellable>.init()
+    
+    public var config: LKAdvertisements
+    
+    required public init(config: LKAdvertisements) {
+        self.config = config
+        super.init()
+    }
     
     public enum Status {
         case didLayout(container: UIView)
         case didRemove
     }
     
-    private let id: String
-    
-    public init(id: String = "ca-app-pub-3940256099942544/2435281174") {
-        self.id = id
-        
-        super.init()
+    public func updateConfig(_ config: LKAdvertisements) {
+        self.config = config
     }
 }
 
@@ -41,6 +49,9 @@ public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService 
 public extension LKBannerAdsPlugin {
     
     func attachBanner(from root: UIViewController, completion: LKValueAction<UIView>? = nil) {
+        
+        guard let id = config.bannerAdID, !id.isEmpty else { return }
+        
         let container = UIView.init()
         let delegate = LKBannerDelegate.init()
         delegate.statusCompletion = { [container] status in

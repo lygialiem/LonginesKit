@@ -29,17 +29,14 @@ public class LKAnalyticPlugin: NSObject, LKAnalyticPluggable {
     private let didSetupS = CurrentValueSubject<Bool, Never>(false)
     
     private var subscriptions = [AnyCancellable]()
-    
-    private let firebasePlugin: LKFirebaseConfigPluggable
-    
-    public init(firebasePlugin: LKFirebaseConfigPluggable) {
-        self.firebasePlugin = firebasePlugin
-    }
 }
 
 extension LKAnalyticPlugin {
     
     public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        guard let firebasePlugin = LKPluggableTool.queryAppDelegate(for: LKFirebaseConfigPluggable.self) else {
+            fatalError("Must Have")
+        }
         firebasePlugin.didConfigureO
             .filter{$0}
             .sink { [weak self] _ in

@@ -23,20 +23,22 @@ class AppDelegate: LKPluggableApplicationDelegate {
     override init() {
         super.init()
         
-        let firebasePlugin = LKFirebaseConfigPlugin.init(testDeviceIDs: [])
-        let remoteConfigPlugin = LKRemoteConfigPlugin(firebasePlugin: firebasePlugin)
+        let bannerAdPlugin = LKBannerAdsPlugin.init(config: .default)
+        let interstitialAdPlugin = LKInterstitialAdsPlugin.init(config: .default)
+        let rewardedAdPlugin = LKRewardedAdPlugin.init(config: .default)
+        let nativeAdPlugin = LKNativeAdPlugin.init(config: .default)
         
         internalServices = [
-            firebasePlugin,
-            remoteConfigPlugin,
-            LKRemoteConfigPlugin.init(firebasePlugin: firebasePlugin),
-            LKUserPropertyPlugin.init(remoteConfigPlugin: remoteConfigPlugin),
-            LKAnalyticPlugin.init(firebasePlugin: firebasePlugin),
+            LKFirebaseConfigPlugin.init(testDeviceIDs: []),
+            LKRemoteConfigPlugin.init(),
+            LKUserPropertyPlugin.init(),
+            LKAnalyticPlugin.init(),
             LKIAPPlugin.init(projectKey: "m1woJHYltNnj4JARHt8JJWA0ejZiel_x"),
-            LKBannerAdsPlugin(),
-            LKInterstitialAdsPlugin(),
-            LKRewardedAdPlugin.init(),
-            LKNativeAdPlugin.init()
+            LKAdvertisementPlugin(ads: [bannerAdPlugin, interstitialAdPlugin, rewardedAdPlugin, nativeAdPlugin]),
+            bannerAdPlugin,
+            interstitialAdPlugin,
+            rewardedAdPlugin,
+            nativeAdPlugin,
         ]
     }
     
@@ -58,3 +60,11 @@ class AppDelegate: LKPluggableApplicationDelegate {
     }
 }
 
+
+
+extension LKAdvertisements {
+    static let `default` = LKAdvertisements.init(bannerAdID: "ca-app-pub-3940256099942544/2435281174",
+                                                 interstitialAdID: "ca-app-pub-3940256099942544/4411468910",
+                                                 rewardedAdID: "ca-app-pub-3940256099942544/1712485313",
+                                                 nativeAdID: "ca-app-pub-3940256099942544/3986624511")
+}

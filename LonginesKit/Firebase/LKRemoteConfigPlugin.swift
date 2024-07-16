@@ -37,13 +37,6 @@ final public class LKRemoteConfigPlugin: NSObject, LKRemoteConfigPluggable {
     private let didActiveS = CurrentValueSubject<Bool, Never>(false)
     private var subscriptions = [AnyCancellable]()
     
-    private let firebaseConfigPlugin: LKFirebaseConfigPluggable
-    
-    public init(firebasePlugin: LKFirebaseConfigPluggable) {
-        self.firebaseConfigPlugin = firebasePlugin
-        super.init()
-    }
-    
     private lazy var remoteConfig: RemoteConfig = {
         let rc = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()
@@ -63,12 +56,15 @@ public extension LKRemoteConfigPlugin {
 private extension LKRemoteConfigPlugin {
     
     func setupRx() {
-        firebaseConfigPlugin.didConfigureO
-            .filter{$0}
-            .sink(receiveValue: { [weak self] didConfig in
-                self?.setup()
-            })
-            .store(in: &subscriptions)
+        if let firebaseConfigPlugin = LKPluggableTool.queryAppDelegate(for: LKFirebaseConfigPluggable.self) {
+            firebaseConfigPlugin.didConfigureO
+                .filter{$0}
+                .prefix(1)
+                .sink(receiveValue: { [weak self] didConfig in
+                    self?.setup()
+                })
+                .store(in: &subscriptions)
+        }
     }
     
     func setup() {

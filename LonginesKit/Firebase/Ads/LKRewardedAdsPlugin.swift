@@ -8,32 +8,54 @@
 import UIKit
 import GoogleMobileAds
 import LonginesKit
+import Combine
 
-public class LKRewardedAdPlugin: NSObject, LKPluggableApplicationDelegateService {
+public class LKRewardedAdPlugin: NSObject, LKPluggableApplicationDelegateService, LKAdPluggable {
     
-   public enum Status {
+    public var config: LKAdvertisements
+    
+    public required init(config: LKAdvertisements) {
+        self.config = config
+        
+        super.init()
+    }
+    
+    public func updateConfig(_ config: LKAdvertisements) {
+        self.config = config
+    }
+    
+    
+    public enum Status {
         case noAdToShow
         case onDismiss
         case didReward
-
+        
     }
-    
-    static let instance = LKRewardedAdPlugin.init()
     
     private var rewardedAd: GADRewardedAd?
     private var onDismiss: LKValueAction<Status>?
     private var didReward = false
-    private let id: String
+    private var cancellables = Set<AnyCancellable>.init()
     
-    public init(id: String = "ca-app-pub-3940256099942544/1712485313") {
-        self.id = id
-        super.init()
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        if let advertisementPlugin = LKPluggableTool.queryAppDelegate(for: LKAdvertisementPlugin.self) {
+            advertisementPlugin.advertisementsPublisher
+                .compactMap{$0}
+                .sink { [weak self] config in
+                    self?.config = config
+                }
+                .store(in: &cancellables)
+        }
+        return true
     }
 }
 
 public extension LKRewardedAdPlugin {
     
     func loadRewardedAd() {
+        guard let id = config.rewardedAdID, !id.isEmpty else { return }
+        
+        
         guard rewardedAd == nil else { return }
         
         let request = GADRequest()

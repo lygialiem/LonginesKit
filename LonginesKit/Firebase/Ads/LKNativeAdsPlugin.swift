@@ -10,34 +10,34 @@ import GoogleMobileAds
 import Combine
 import LonginesKit
 
-public class LKNativeAdPlugin: NSObject, LKPluggableApplicationDelegateService {
+public class LKNativeAdPlugin: NSObject, LKPluggableApplicationDelegateService, LKAdPluggable {
     
-    public struct Config {
-        let numberOfAds: Int
-        
-        public init(numberOfAds: Int = 5) {
-            self.numberOfAds = numberOfAds
-        }
+    public func updateConfig(_ config: LKAdvertisements) {
+        self.config = config
+    }
+    
+    public var config: LKAdvertisements
+    
+    public required init(config: LKAdvertisements) {
+        self.config = config
+    }
+    
+    public convenience init(numberOfAds: Int = 3, config: LKAdvertisements) {
+        self.init(config: config)
+        self.numberOfAds = numberOfAds
     }
     
     private var adLoader: GADAdLoader?
     public var nativeAds = [GADNativeAd]()
     public let nativeAdsS = ReplayValueSubject<[GADNativeAd]>.init(bufferSize: 1)
-    private let config: Config
+    private var numberOfAds: Int = 3
     
-    private let id: String
-    
-    public init(id: String = "ca-app-pub-3940256099942544/3986624511",
-                config: Config = .init()) {
-        self.id = id
-        self.config = config
+    public func loadAds() {
+        guard let id = config.nativeAdID, !id.isEmpty else { return }
         
-        super.init()
-    }
-    
-   public func loadAds() {
+        
         let options = GADMultipleAdsAdLoaderOptions.init()
-        options.numberOfAds = config.numberOfAds
+        options.numberOfAds = numberOfAds
         let adLoader = GADAdLoader(adUnitID: id,
                                    rootViewController: nil,
                                    adTypes: [ .native ],
@@ -46,6 +46,8 @@ public class LKNativeAdPlugin: NSObject, LKPluggableApplicationDelegateService {
         adLoader.load(.init())
         self.adLoader = adLoader
     }
+    
+    
 }
 
 extension LKNativeAdPlugin: GADNativeAdLoaderDelegate {

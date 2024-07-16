@@ -51,6 +51,8 @@
 		0C6B887A2C3004D600CA41AF /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C898AC12C2ED2E500296E0B /* UserMessagingPlatform.xcframework */; };
 		0C6B887D2C30057E00CA41AF /* LonginesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */; };
 		0C6B88832C3038E000CA41AF /* LKPluggableApplicationDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898A7E2C2EB11B00296E0B /* LKPluggableApplicationDelegateService.swift */; };
+		0C6F74062C46B6B10043FA74 /* LKAdvertisementPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F74042C46B6A00043FA74 /* LKAdvertisementPlugin.swift */; };
+		0C6F740C2C46B8D20043FA74 /* Json Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F740B2C46B8D20043FA74 /* Json Ext.swift */; };
 		0C7B414F2C31B3890089E2D6 /* LKInterstitialAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B414D2C31B37C0089E2D6 /* LKInterstitialAdsPlugin.swift */; };
 		0C7B41532C31B8560089E2D6 /* LKRewardedAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B41502C31B8480089E2D6 /* LKRewardedAdsPlugin.swift */; };
 		0CC661442C306DDE00E869A9 /* LKAnalyticPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC661422C306D9800E869A9 /* LKAnalyticPlugin.swift */; };
@@ -149,6 +151,8 @@
 
 /* Begin PBXFileReference section */
 		0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6F74042C46B6A00043FA74 /* LKAdvertisementPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAdvertisementPlugin.swift; sourceTree = "<group>"; };
+		0C6F740B2C46B8D20043FA74 /* Json Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Json Ext.swift"; sourceTree = "<group>"; };
 		0C7B414D2C31B37C0089E2D6 /* LKInterstitialAdsPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKInterstitialAdsPlugin.swift; sourceTree = "<group>"; };
 		0C7B41502C31B8480089E2D6 /* LKRewardedAdsPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKRewardedAdsPlugin.swift; sourceTree = "<group>"; };
 		0C898A7C2C2EB11B00296E0B /* LKPluggableServiceProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKPluggableServiceProviderProtocol.swift; sourceTree = "<group>"; };
@@ -370,6 +374,7 @@
 				0C7B414D2C31B37C0089E2D6 /* LKInterstitialAdsPlugin.swift */,
 				0C7B41502C31B8480089E2D6 /* LKRewardedAdsPlugin.swift */,
 				0CFB00762C463EF1007282D8 /* LKNativeAdsPlugin.swift */,
+				0C6F74042C46B6A00043FA74 /* LKAdvertisementPlugin.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				21FFCCC32C296ED800BD543A /* UIStackView Ext.swift */,
 				21FFCCC52C296FA200BD543A /* LKCell.swift */,
 				0CFB00792C46450C007282D8 /* ReplayValueSubject.swift */,
+				0C6F740B2C46B8D20043FA74 /* Json Ext.swift */,
 			);
 			path = LonginesKit;
 			sourceTree = "<group>";
@@ -709,6 +715,7 @@
 				0CC6614B2C30749F00E869A9 /* LKHelper.swift in Sources */,
 				0CFB007A2C46450C007282D8 /* ReplayValueSubject.swift in Sources */,
 				0C6B88462C3002FD00CA41AF /* LKBaseViewController.swift in Sources */,
+				0C6F740C2C46B8D20043FA74 /* Json Ext.swift in Sources */,
 				0C6B88472C3002FD00CA41AF /* Dictionary Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +738,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C7B41532C31B8560089E2D6 /* LKRewardedAdsPlugin.swift in Sources */,
+				0C6F74062C46B6B10043FA74 /* LKAdvertisementPlugin.swift in Sources */,
 				0C7B414F2C31B3890089E2D6 /* LKInterstitialAdsPlugin.swift in Sources */,
 				0CC661442C306DDE00E869A9 /* LKAnalyticPlugin.swift in Sources */,
 				0CE78F342C30004A00B4284B /* LKFirebaseConfigPlugin.swift in Sources */,
