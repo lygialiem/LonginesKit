@@ -74,6 +74,8 @@
 		0CE78F342C30004A00B4284B /* LKFirebaseConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE52C2F1E0100296E0B /* LKFirebaseConfigPlugin.swift */; };
 		0CE78F352C30004A00B4284B /* LKRemoteConfigPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE32C2F1E0100296E0B /* LKRemoteConfigPlugin.swift */; };
 		0CE78F362C30004A00B4284B /* LKUserPropertyPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE42C2F1E0100296E0B /* LKUserPropertyPlugin.swift */; };
+		0CFB004A2C461E1E007282D8 /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; };
+		0CFB004B2C461E1E007282D8 /* LonginesFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9B2C295D9000BD543A /* AppDelegate.swift */; };
 		21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* HomeViewController.swift */; };
 		21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA42C295D9200BD543A /* Assets.xcassets */; };
@@ -116,6 +118,13 @@
 			remoteGlobalIDString = 0CC661542C30787600E869A9;
 			remoteInfo = LonginesQonversion;
 		};
+		0CFB004C2C461E1E007282D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FFCC7A2C29508A00BD543A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CE78EE72C2FFE1C00B4284B;
+			remoteInfo = LonginesFirebase;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,6 +138,17 @@
 				0CC6619A2C31050200E869A9 /* Qonversion.xcframework in Embed Frameworks */,
 				0C3BFD852C3118EA00A7D716 /* LonginesFirebase.framework in Embed Frameworks */,
 				0CC661922C31040A00E869A9 /* LonginesKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFB004E2C461E1E007282D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0CFB004B2C461E1E007282D8 /* LonginesFirebase.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFB004A2C461E1E007282D8 /* LonginesFirebase.framework in Frameworks */,
 				0CC661722C30789700E869A9 /* LonginesKit.framework in Frameworks */,
 				0CC6617A2C30797D00E869A9 /* Qonversion.xcframework in Frameworks */,
 			);
@@ -534,11 +555,13 @@
 				0CC661512C30787600E869A9 /* Sources */,
 				0CC661522C30787600E869A9 /* Frameworks */,
 				0CC661532C30787600E869A9 /* Resources */,
+				0CFB004E2C461E1E007282D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0CC661752C30789700E869A9 /* PBXTargetDependency */,
+				0CFB004D2C461E1E007282D8 /* PBXTargetDependency */,
 			);
 			name = LonginesQonversion;
 			productName = LonginesQonversion;
@@ -593,7 +616,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					0CC661542C30787600E869A9 = {
 						CreatedOnToolsVersion = 15.3;
@@ -607,7 +630,7 @@
 				};
 			};
 			buildConfigurationList = 21FFCC7D2C29508A00BD543A /* Build configuration list for PBXProject "LonginesKit" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -753,6 +776,11 @@
 			target = 0CC661542C30787600E869A9 /* LonginesQonversion */;
 			targetProxy = 0CC661952C31041500E869A9 /* PBXContainerItemProxy */;
 		};
+		0CFB004D2C461E1E007282D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CE78EE72C2FFE1C00B4284B /* LonginesFirebase */;
+			targetProxy = 0CFB004C2C461E1E007282D8 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -851,7 +879,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -894,7 +922,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -937,6 +965,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -981,6 +1010,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
