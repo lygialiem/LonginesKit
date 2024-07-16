@@ -77,6 +77,8 @@
 		0CFB004A2C461E1E007282D8 /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; };
 		0CFB00782C463F39007282D8 /* LKNativeAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB00762C463EF1007282D8 /* LKNativeAdsPlugin.swift */; };
 		0CFB007A2C46450C007282D8 /* ReplayValueSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB00792C46450C007282D8 /* ReplayValueSubject.swift */; };
+		0CFB00902C468650007282D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFB008E2C468650007282D8 /* AdSupport.framework */; };
+		0CFB00912C468650007282D8 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFB008F2C468650007282D8 /* AdServices.framework */; };
 		21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9B2C295D9000BD543A /* AppDelegate.swift */; };
 		21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* HomeViewController.swift */; };
 		21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA42C295D9200BD543A /* Assets.xcassets */; };
@@ -204,6 +206,8 @@
 		0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFB00762C463EF1007282D8 /* LKNativeAdsPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKNativeAdsPlugin.swift; sourceTree = "<group>"; };
 		0CFB00792C46450C007282D8 /* ReplayValueSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayValueSubject.swift; sourceTree = "<group>"; };
+		0CFB008E2C468650007282D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		0CFB008F2C468650007282D8 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
 		21FFCC862C29508A00BD543A /* LonginesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonginesKit.h; sourceTree = "<group>"; };
 		21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppAppearance.swift; sourceTree = "<group>"; };
 		21FFCC992C295D9000BD543A /* AppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,6 +259,7 @@
 				0C6B88562C3004D500CA41AF /* FirebaseCoreExtension.xcframework in Frameworks */,
 				0C6B88522C3004D500CA41AF /* FirebaseABTesting.xcframework in Frameworks */,
 				0C6B887A2C3004D600CA41AF /* UserMessagingPlatform.xcframework in Frameworks */,
+				0CFB00902C468650007282D8 /* AdSupport.framework in Frameworks */,
 				0C6B88702C3004D600CA41AF /* GoogleUtilities.xcframework in Frameworks */,
 				0C6B88762C3004D600CA41AF /* nanopb.xcframework in Frameworks */,
 				0C6B887D2C30057E00CA41AF /* LonginesKit.framework in Frameworks */,
@@ -265,6 +270,7 @@
 				0C6B885A2C3004D500CA41AF /* FirebaseCrashlytics.xcframework in Frameworks */,
 				0C6B88782C3004D600CA41AF /* Promises.xcframework in Frameworks */,
 				0C6B886E2C3004D600CA41AF /* GoogleMobileAds.xcframework in Frameworks */,
+				0CFB00912C468650007282D8 /* AdServices.framework in Frameworks */,
 				0C6B886C2C3004D600CA41AF /* GoogleDataTransport.xcframework in Frameworks */,
 				0C6B88542C3004D500CA41AF /* FirebaseAnalytics.xcframework in Frameworks */,
 				0C6B88502C3004D500CA41AF /* FBLPromises.xcframework in Frameworks */,
@@ -468,6 +474,8 @@
 		21FFCCAD2C295DF200BD543A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0CFB008F2C468650007282D8 /* AdServices.framework */,
+				0CFB008E2C468650007282D8 /* AdSupport.framework */,
 				0CC661792C30797D00E869A9 /* Qonversion.xcframework */,
 				0C898B922C2F29F000296E0B /* libz.tbd */,
 				0C898B902C2F29E000296E0B /* libsqlite3.tbd */,
@@ -816,6 +824,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -857,6 +866,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.core;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -900,6 +910,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.qonverson;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -944,6 +955,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.longines.kit.qonverson;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
