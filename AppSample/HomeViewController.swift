@@ -23,6 +23,8 @@ class HomeViewController: LKBaseViewController {
     
     private lazy var showRewardedAdButton = createButton(title: "Show Rewarded Ad")
     
+    private lazy var showNativeAdButton = createButton(title: "Show Native Ad")
+    
     private lazy var purchaseButton = createButton(title: "Purchase IAP item")
     
     private let rewardedAdPlugin = LKPluggableTool.queryAppDelegate(for: LKRewardedAdPlugin.self)!
@@ -30,6 +32,8 @@ class HomeViewController: LKBaseViewController {
     private let interstitialPlugin = LKPluggableTool.queryAppDelegate(for: LKInterstitialAdsPlugin.self)!
     
     private let bannerPlugin = LKPluggableTool.queryAppDelegate(for: LKBannerAdsPlugin.self)!
+    
+    private let nativeAdPlugin = LKPluggableTool.queryAppDelegate(for: LKNativeAdPlugin.self)!
     
     private lazy var mainStackView: UIStackView = {
         let stackView = UIStackView.init()
@@ -67,6 +71,7 @@ class HomeViewController: LKBaseViewController {
         mainStackView.addArrangedSubviews(showBannerAdButton,
                                           showInterstitialAdButton,
                                           showRewardedAdButton,
+                                          showNativeAdButton,
                                           purchaseButton)
         NSLayoutConstraint.activate([
             mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -82,7 +87,6 @@ class HomeViewController: LKBaseViewController {
     
     override func visualize() {
         super.visualize()
-        
         
         iapPlugin.didCheckPermissionO
             .receive(on: DispatchQueue.main)
@@ -110,6 +114,18 @@ class HomeViewController: LKBaseViewController {
             self.rewardedAdPlugin.presentRewardedAd(at: self) { status in
                 loggingPrint(status)
             }
+            
+        }), for: .touchUpInside)
+        
+        showNativeAdButton.addAction(.init(handler: { [weak self] _ in
+            guard let self else { return }
+            self.nativeAdPlugin.nativeAdsS
+                .sink { ads in
+                    print("== Native Ads:", ads)
+                }
+                .store(in: &self.subscriptions)
+            
+            self.nativeAdPlugin.loadAds()
             
         }), for: .touchUpInside)
         

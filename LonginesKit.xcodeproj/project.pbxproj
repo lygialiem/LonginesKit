@@ -76,6 +76,8 @@
 		0CE78F362C30004A00B4284B /* LKUserPropertyPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C898AE42C2F1E0100296E0B /* LKUserPropertyPlugin.swift */; };
 		0CFB004A2C461E1E007282D8 /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; };
 		0CFB004B2C461E1E007282D8 /* LonginesFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CFB00782C463F39007282D8 /* LKNativeAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB00762C463EF1007282D8 /* LKNativeAdsPlugin.swift */; };
+		0CFB007A2C46450C007282D8 /* ReplayValueSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB00792C46450C007282D8 /* ReplayValueSubject.swift */; };
 		21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9B2C295D9000BD543A /* AppDelegate.swift */; };
 		21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* HomeViewController.swift */; };
 		21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA42C295D9200BD543A /* Assets.xcassets */; };
@@ -212,6 +214,8 @@
 		0CC661872C307C2C00E869A9 /* LKIAPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKIAPError.swift; sourceTree = "<group>"; };
 		0CC6618B2C3100BA00E869A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFB00762C463EF1007282D8 /* LKNativeAdsPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKNativeAdsPlugin.swift; sourceTree = "<group>"; };
+		0CFB00792C46450C007282D8 /* ReplayValueSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayValueSubject.swift; sourceTree = "<group>"; };
 		21FFCC862C29508A00BD543A /* LonginesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonginesKit.h; sourceTree = "<group>"; };
 		21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppAppearance.swift; sourceTree = "<group>"; };
 		21FFCC992C295D9000BD543A /* AppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -371,6 +375,7 @@
 				0CC661462C3071D100E869A9 /* LKBannerAdsPlugin.swift */,
 				0C7B414D2C31B37C0089E2D6 /* LKInterstitialAdsPlugin.swift */,
 				0C7B41502C31B8480089E2D6 /* LKRewardedAdsPlugin.swift */,
+				0CFB00762C463EF1007282D8 /* LKNativeAdsPlugin.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				21FFCCBF2C296AC300BD543A /* UIViewController Ext.swift */,
 				21FFCCC32C296ED800BD543A /* UIStackView Ext.swift */,
 				21FFCCC52C296FA200BD543A /* LKCell.swift */,
+				0CFB00792C46450C007282D8 /* ReplayValueSubject.swift */,
 			);
 			path = LonginesKit;
 			sourceTree = "<group>";
@@ -706,6 +712,7 @@
 				0C6B88442C3002FD00CA41AF /* LKBaseNavigationController.swift in Sources */,
 				0C6B88452C3002FD00CA41AF /* LKCell.swift in Sources */,
 				0CC6614B2C30749F00E869A9 /* LKHelper.swift in Sources */,
+				0CFB007A2C46450C007282D8 /* ReplayValueSubject.swift in Sources */,
 				0C6B88462C3002FD00CA41AF /* LKBaseViewController.swift in Sources */,
 				0C6B88472C3002FD00CA41AF /* Dictionary Ext.swift in Sources */,
 			);
@@ -735,6 +742,7 @@
 				0C3BFD882C31193C00A7D716 /* LKBannerAdsPlugin.swift in Sources */,
 				0CE78F352C30004A00B4284B /* LKRemoteConfigPlugin.swift in Sources */,
 				0CE78F362C30004A00B4284B /* LKUserPropertyPlugin.swift in Sources */,
+				0CFB00782C463F39007282D8 /* LKNativeAdsPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

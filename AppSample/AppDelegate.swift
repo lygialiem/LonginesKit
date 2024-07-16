@@ -35,7 +35,8 @@ class AppDelegate: LKPluggableApplicationDelegate {
             LKIAPPlugin.init(projectKey: "m1woJHYltNnj4JARHt8JJWA0ejZiel_x"),
             LKBannerAdsPlugin(),
             LKInterstitialAdsPlugin(),
-            LKRewardedAdPlugin.init()
+            LKRewardedAdPlugin.init(),
+            LKNativeAdPlugin.init()
         ]
     }
     

@@ -28,28 +28,6 @@ public class LKInterstitialAdsPlugin: NSObject, LKPluggableApplicationDelegateSe
 
 public extension LKInterstitialAdsPlugin {
     
-   func presentInterstitial(from viewController: UIViewController, onDismiss: LKVoidAction?) {
-        if let interstitialAd {
-            interstitialAd.present(fromRootViewController: viewController)
-            self.onDismiss = onDismiss
-            return
-        }
-        loadInterstitial()
-        onDismiss?()
-    }
-}
-
-public extension LKInterstitialAdsPlugin {
-    
-   private func reloadInterstitial() {
-        guard interstitialAd == nil else { return }
-        retryCounting += 1
-        guard retryCounting <= numberOfRetry else { return }
-        DispatchQueue.main.asyncAfter(deadline: .now() + loadInteralInSeconds) {
-            self.loadInterstitial()
-        }
-    }
-    
     func loadInterstitial() {
         guard interstitialAd == nil else { return }
         
@@ -68,6 +46,31 @@ public extension LKInterstitialAdsPlugin {
             retryCounting = 0
         })
     }
+    
+   func presentInterstitial(from viewController: UIViewController, onDismiss: LKVoidAction?) {
+        if let interstitialAd {
+            interstitialAd.present(fromRootViewController: viewController)
+            self.onDismiss = onDismiss
+            return
+        }
+       
+        loadInterstitial()
+        onDismiss?()
+    }
+}
+
+public extension LKInterstitialAdsPlugin {
+    
+   private func reloadInterstitial() {
+        guard interstitialAd == nil else { return }
+        retryCounting += 1
+        guard retryCounting <= numberOfRetry else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + loadInteralInSeconds) {
+            self.loadInterstitial()
+        }
+    }
+    
+    
 }
 
 extension LKInterstitialAdsPlugin: GADFullScreenContentDelegate {
