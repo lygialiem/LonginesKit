@@ -40,13 +40,12 @@ public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService 
 // MARK: - Attach/Detech
 public extension LKBannerAdsPlugin {
     
-    func attachBanner(from root: UIViewController) {
+    func attachBanner(from root: UIViewController, completion: LKValueAction<UIView>? = nil) {
         let container = UIView.init()
         let delegate = LKBannerDelegate.init()
-        delegate.statusCompletion = { [weak self, container] status in
+        delegate.statusCompletion = { [container] status in
             switch status {
             case .didReiceiveAd(let bannerView):
-                
                 let containerSuperView = root.view!
                 containerSuperView.addSubview(container)
                 container.addSubview(bannerView)
@@ -66,8 +65,7 @@ public extension LKBannerAdsPlugin {
                     container.bottomAnchor.constraint(equalTo: containerSuperView.safeAreaLayoutGuide.bottomAnchor),
                 ])
                 
-                self?.completion?(.didLayout(container: container))
-                self?.completion = nil
+               completion?(container)
                 
             case .didFailToReceiveAd:
                 break
@@ -92,13 +90,13 @@ public extension LKBannerAdsPlugin {
         }
     }
     
-    func detachBanner(from root: UIViewController) {
+    func detachBanner(from root: UIViewController, completion: LKVoidAction? = nil) {
         guard let index = bannerInfos.firstIndex(where: {$0.rootName == root.className}) else {
             return
         }
         bannerInfos[index].container.removeFromSuperview()
         bannerInfos.remove(at: index)
-        completion?(.didRemove)
+        completion?()
     }
 }
 
