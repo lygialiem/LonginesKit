@@ -33,7 +33,8 @@ public extension ASAnimatedCellProtocol {
     }
 }
 
-public class LKAnimatedTableViewCell: UITableViewCell, ASAnimatedCellProtocol {
+open class LKAnimatedTableViewCell: UITableViewCell, ASAnimatedCellProtocol {
+    
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         UIView.animate(withDuration: animationDuration) {
@@ -59,7 +60,7 @@ public class LKAnimatedTableViewCell: UITableViewCell, ASAnimatedCellProtocol {
     }
 }
 
-public class LKAnimatedCollectionViewCell: UICollectionViewCell, ASAnimatedCellProtocol {
+open class LKAnimatedCollectionViewCell: UICollectionViewCell, ASAnimatedCellProtocol {
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         UIView.animate(withDuration: animationDuration) {
