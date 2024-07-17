@@ -9,6 +9,10 @@ import UIKit
 
 extension UIView {
     
+    public static var viewIdentifier: String {
+        String.init(describing: self)
+    }
+    
     public func addSubviews(_ subviews: UIView...) {
         subviews.forEach { view in
             addSubview(view)

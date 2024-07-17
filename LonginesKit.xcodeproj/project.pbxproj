@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1A78DD2C4830DD008117C4 /* LKAnimatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A78DC2C4830DD008117C4 /* LKAnimatedCell.swift */; };
+		0C1A78E12C48317D008117C4 /* Cell Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A78E02C48317D008117C4 /* Cell Ext.swift */; };
 		0C3BFD842C3118EA00A7D716 /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; };
 		0C3BFD852C3118EA00A7D716 /* LonginesFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C3BFD882C31193C00A7D716 /* LKBannerAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC661462C3071D100E869A9 /* LKBannerAdsPlugin.swift */; };
@@ -150,6 +152,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C1A78DC2C4830DD008117C4 /* LKAnimatedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAnimatedCell.swift; sourceTree = "<group>"; };
+		0C1A78E02C48317D008117C4 /* Cell Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell Ext.swift"; sourceTree = "<group>"; };
 		0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6F74042C46B6A00043FA74 /* LKAdvertisementPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAdvertisementPlugin.swift; sourceTree = "<group>"; };
 		0C6F740B2C46B8D20043FA74 /* Json Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Json Ext.swift"; sourceTree = "<group>"; };
@@ -401,6 +405,7 @@
 			children = (
 				21FFCCC72C2970D900BD543A /* Base */,
 				21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */,
+				0C1A78DC2C4830DD008117C4 /* LKAnimatedCell.swift */,
 				21FFCCC12C296DC900BD543A /* LKUserDefaultsWrapper.swift */,
 				21FFCCB32C2964D100BD543A /* LKLoggingPrint.swift */,
 				21FFCCB52C29661200BD543A /* Bundle Ext.swift */,
@@ -413,6 +418,7 @@
 				21FFCCC52C296FA200BD543A /* LKCell.swift */,
 				0CFB00792C46450C007282D8 /* ReplayValueSubject.swift */,
 				0C6F740B2C46B8D20043FA74 /* Json Ext.swift */,
+				0C1A78E02C48317D008117C4 /* Cell Ext.swift */,
 			);
 			path = LonginesKit;
 			sourceTree = "<group>";
@@ -699,6 +705,7 @@
 				0C6B88362C3002FD00CA41AF /* LKBaseView.swift in Sources */,
 				0C6B88372C3002FD00CA41AF /* LKAppAppearance.swift in Sources */,
 				0C6B88392C3002FD00CA41AF /* LKUserDefaultsWrapper.swift in Sources */,
+				0C1A78E12C48317D008117C4 /* Cell Ext.swift in Sources */,
 				0C6B883A2C3002FD00CA41AF /* UIStackView Ext.swift in Sources */,
 				0C6B883B2C3002FD00CA41AF /* Bundle Ext.swift in Sources */,
 				0C6B883C2C3002FD00CA41AF /* LKPluggableTool.swift in Sources */,
@@ -706,6 +713,7 @@
 				0C6B883E2C3002FD00CA41AF /* UIViewController Ext.swift in Sources */,
 				0C6B883F2C3002FD00CA41AF /* UIView Ext.swift in Sources */,
 				0C6B88402C3002FD00CA41AF /* LKPluggableApplicationDelegate.swift in Sources */,
+				0C1A78DD2C4830DD008117C4 /* LKAnimatedCell.swift in Sources */,
 				0C6B88832C3038E000CA41AF /* LKPluggableApplicationDelegateService.swift in Sources */,
 				0C6B88412C3002FD00CA41AF /* LKLoggingPrint.swift in Sources */,
 				0C6B88422C3002FD00CA41AF /* LKPluggableServiceProviderProtocol.swift in Sources */,
