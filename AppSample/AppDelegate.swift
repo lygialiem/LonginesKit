@@ -45,8 +45,8 @@ class AppDelegate: LKPluggableApplicationDelegate {
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let `super` = super.application(application, didFinishLaunchingWithOptions: launchOptions)
-        LKAppAppearance.designerScreenWidth = 1000
-        LKAppAppearance.designerScreenHeight = 1000
+        LKAppAppearance.designerScreenWidth = 430
+        LKAppAppearance.designerScreenHeight = 932
         
         let vc = HomeViewController.init()
         let nav = vc.embedNavigation

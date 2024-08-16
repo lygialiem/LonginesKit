@@ -43,7 +43,8 @@ extension LKFirebaseConfigPlugin {
     public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         guard let _ = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") else {
-            fatalError("Coult not load GoogleService-Info.plist'.")
+            loggingPrint("Coult not load GoogleService-Info.plist'.")
+            return true
         }
     
         if let options {

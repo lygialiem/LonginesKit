@@ -21,9 +21,8 @@ public class LKAdvertisementPlugin: NSObject, LKPluggableApplicationDelegateServ
     
     private let advertisementsSubject = CurrentValueSubject<LKAdvertisements?, Never>.init(nil)
     
-    
-    
     public var bannerAdPlugin: LKBannerAdsPlugin?
+    
     public var interstitialAdPlugin: LKInterstitialAdsPlugin?
     
     private let ads: [any LKAdPluggable]
@@ -79,4 +78,12 @@ public struct LKAdvertisements: Decodable {
 
 public protocol LKAdConfigurable {
     var id: String { get }
+}
+
+
+extension LKAdvertisements {
+    static let `default` = LKAdvertisements.init(bannerAdID: "ca-app-pub-3940256099942544/2435281174",
+                                                 interstitialAdID: "ca-app-pub-3940256099942544/4411468910",
+                                                 rewardedAdID: "ca-app-pub-3940256099942544/1712485313",
+                                                 nativeAdID: "ca-app-pub-3940256099942544/3986624511")
 }
