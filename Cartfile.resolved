@@ -4,4 +4,4 @@ binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseCrashlyticsBinary
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json" "10.28.0"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseProtobufBinary.json" "7.6.0"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseRemoteConfigBinary.json" "10.28.0"
-github "qonversion/qonversion-ios-sdk" "prerelease/5.11.1"
+github "qonversion/qonversion-ios-sdk" "5.12.0"
