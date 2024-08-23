@@ -68,7 +68,7 @@ extension UIColor {
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
 
-    enum SGHexAlpha: String {
+   public enum HexAlpha: String {
         case _100 = "FF"
         case _99 = "FC"
         case _98 = "FA"
