@@ -57,6 +57,8 @@
 		0C6F740C2C46B8D20043FA74 /* Json Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F740B2C46B8D20043FA74 /* Json Ext.swift */; };
 		0C7B414F2C31B3890089E2D6 /* LKInterstitialAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B414D2C31B37C0089E2D6 /* LKInterstitialAdsPlugin.swift */; };
 		0C7B41532C31B8560089E2D6 /* LKRewardedAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7B41502C31B8480089E2D6 /* LKRewardedAdsPlugin.swift */; };
+		0C8A10242C7DB9B800286108 /* Codable Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A10232C7DB9B800286108 /* Codable Ext.swift */; };
+		0C8A10262C7DB9F000286108 /* LKConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A10252C7DB9F000286108 /* LKConstant.swift */; };
 		0CC661442C306DDE00E869A9 /* LKAnalyticPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC661422C306D9800E869A9 /* LKAnalyticPlugin.swift */; };
 		0CC6614B2C30749F00E869A9 /* LKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6614A2C30749F00E869A9 /* LKHelper.swift */; };
 		0CC661592C30787600E869A9 /* LonginesQonversion.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0CC661582C30787600E869A9 /* LonginesQonversion.docc */; };
@@ -197,6 +199,8 @@
 		0C898B8E2C2F29D100296E0B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0C898B902C2F29E000296E0B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0C898B922C2F29F000296E0B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0C8A10232C7DB9B800286108 /* Codable Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable Ext.swift"; sourceTree = "<group>"; };
+		0C8A10252C7DB9F000286108 /* LKConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKConstant.swift; sourceTree = "<group>"; };
 		0CC661422C306D9800E869A9 /* LKAnalyticPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAnalyticPlugin.swift; sourceTree = "<group>"; };
 		0CC661462C3071D100E869A9 /* LKBannerAdsPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKBannerAdsPlugin.swift; sourceTree = "<group>"; };
 		0CC6614A2C30749F00E869A9 /* LKHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKHelper.swift; sourceTree = "<group>"; };
@@ -419,6 +423,8 @@
 				0CFB00792C46450C007282D8 /* ReplayValueSubject.swift */,
 				0C6F740B2C46B8D20043FA74 /* Json Ext.swift */,
 				0C1A78E02C48317D008117C4 /* Cell Ext.swift */,
+				0C8A10232C7DB9B800286108 /* Codable Ext.swift */,
+				0C8A10252C7DB9F000286108 /* LKConstant.swift */,
 			);
 			path = LonginesKit;
 			sourceTree = "<group>";
@@ -709,6 +715,8 @@
 				0C6B883A2C3002FD00CA41AF /* UIStackView Ext.swift in Sources */,
 				0C6B883B2C3002FD00CA41AF /* Bundle Ext.swift in Sources */,
 				0C6B883C2C3002FD00CA41AF /* LKPluggableTool.swift in Sources */,
+				0C8A10242C7DB9B800286108 /* Codable Ext.swift in Sources */,
+				0C8A10262C7DB9F000286108 /* LKConstant.swift in Sources */,
 				0C6B883D2C3002FD00CA41AF /* UIColor Ext.swift in Sources */,
 				0C6B883E2C3002FD00CA41AF /* UIViewController Ext.swift in Sources */,
 				0C6B883F2C3002FD00CA41AF /* UIView Ext.swift in Sources */,
