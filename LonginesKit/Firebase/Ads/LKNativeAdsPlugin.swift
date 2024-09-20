@@ -16,10 +16,19 @@ public class LKNativeAdPlugin: NSObject, LKPluggableApplicationDelegateService, 
         self.config = config
     }
     
+    private var cancellables = Set<AnyCancellable>.init()
+    
     public var config: LKAdvertisements
     
     public required init(config: LKAdvertisements) {
         self.config = config
+        super.init()
+        
+        nativeAdsS
+            .sink { [weak self] ads in
+                self?.nativeAds = ads
+            }
+            .store(in: &cancellables)
     }
     
     public convenience init(numberOfAds: Int = 3, config: LKAdvertisements) {
@@ -46,7 +55,6 @@ public class LKNativeAdPlugin: NSObject, LKPluggableApplicationDelegateService, 
         adLoader.load(.init())
         self.adLoader = adLoader
     }
-    
     
 }
 
