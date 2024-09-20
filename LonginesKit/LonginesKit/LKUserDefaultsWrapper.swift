@@ -31,7 +31,7 @@ public struct LKUserDefaultWrapper<T: Codable> {
     }
 }
 
-extension UserDefaults {
+public extension UserDefaults {
     func get<T: Codable>(_ type: T.Type, key: String) -> T? {
         guard let valueAsString = string(forKey: key) else {
             return nil
