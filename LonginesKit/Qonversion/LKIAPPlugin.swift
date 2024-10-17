@@ -68,28 +68,27 @@ public extension LKIAPPlugin {
 private extension LKIAPPlugin {
     
     func initialize() {
-         guard let userPropertyPlugin = LKPluggableTool.queryAppDelegate(for: LKUserPropertyPluggable.self),
-               let remoteConfigPlugin = LKPluggableTool.queryAppDelegate(for: LKRemoteConfigPluggable.self)
+         guard let remoteConfigPlugin = LKPluggableTool.queryAppDelegate(for: LKRemoteConfigPluggable.self)
          else {
              return
          }
-         
-         userPropertyPlugin.didSetupO.filter{$0}
-             .sink(receiveValue: { [weak self] _ in guard let owner = self else { return }
-                 let qonversionOffering: String = remoteConfigPlugin.qonversion_offering
-                 if qonversionOffering.isEmpty {
-                     owner.qonversionOffering = "premium"
-                 } else {
-                     owner.qonversionOffering = qonversionOffering
-                 }
-                 
-                 Task {
-                     await owner.prepareProducts()
-                     owner.didCheckPermissionS.send(true)
-                 }
-             })
-             .store(in: &subscriptions)
-     }
+        remoteConfigPlugin.didActiveO
+            .filter{$0}
+            .sink(receiveValue: { [weak self] _ in guard let owner = self else { return }
+                let qonversionOffering: String = remoteConfigPlugin.qonversion_offering
+                if qonversionOffering.isEmpty {
+                    owner.qonversionOffering = "premium"
+                } else {
+                    owner.qonversionOffering = qonversionOffering
+                }
+                
+                Task {
+                    await owner.prepareProducts()
+                    owner.didCheckPermissionS.send(true)
+                }
+            })
+            .store(in: &subscriptions)
+    }
      
      func prepareProducts() async {
          // fetching products
