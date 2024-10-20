@@ -68,10 +68,12 @@ public extension LKIAPPlugin {
 private extension LKIAPPlugin {
     
     func initialize() {
-         guard let remoteConfigPlugin = LKPluggableTool.queryAppDelegate(for: LKRemoteConfigPluggable.self)
-         else {
-             return
-         }
+        Task {
+            await checkPermission()
+            didCheckPermissionS.send(true)
+        }
+        
+        let remoteConfigPlugin = LKPluggableTool.queryAppDelegate(for: LKRemoteConfigPluggable.self)!
         remoteConfigPlugin.didActiveO
             .filter{$0}
             .sink(receiveValue: { [weak self] _ in guard let owner = self else { return }
@@ -84,10 +86,21 @@ private extension LKIAPPlugin {
                 
                 Task {
                     await owner.prepareProducts()
-                    owner.didCheckPermissionS.send(true)
                 }
             })
             .store(in: &subscriptions)
+    }
+    
+    func checkPermission() async {
+        // check isPremium
+        async let checkPermissionResult = await checkPermissions()
+        switch await checkPermissionResult {
+        case .success(let isActive):
+            updatePurchase(isPurchased: isActive)
+            print("[Qonversion] check permisison success:", isActive)
+        case .failure(let error):
+            print("[Qonversion] check permisison error:", error.localizedDescription)
+        }
     }
      
      func prepareProducts() async {
@@ -99,17 +112,6 @@ private extension LKIAPPlugin {
              print("[Qonversion] fetch products success:", products)
          case .failure(let error):
              print("[Qonversion] fetch products error:", error.localizedDescription)
-         }
-         
-         
-         // check isPremium
-         async let checkPermissionResult = await checkPermissions()
-         switch await checkPermissionResult {
-         case .success(let isActive):
-             updatePurchase(isPurchased: isActive)
-             print("[Qonversion] check permisison success:", isActive)
-         case .failure(let error):
-             print("[Qonversion] check permisison error:", error.localizedDescription)
          }
      }
 }

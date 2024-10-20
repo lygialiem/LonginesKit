@@ -104,9 +104,11 @@ class HomeViewController: LKBaseViewController {
         
         showBannerAdButton.addAction(.init(handler: { [weak self] _ in
             guard let self else { return }
-            if !self.iapPlugin.isPremiumUser {
-                bannerPlugin.attachBanner(from: self)
-            }
+            
+            let vc = LKBannerViewController.init()
+            vc.modalPresentationStyle = .automatic
+            
+            self.present(vc, animated: true)
         }), for: .touchUpInside)
         
         showRewardedAdButton.addAction(.init(handler: {  [weak self] _ in

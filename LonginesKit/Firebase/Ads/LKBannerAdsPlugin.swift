@@ -54,10 +54,10 @@ public extension LKBannerAdsPlugin {
         
         let container = UIView.init()
         let delegate = LKBannerDelegate.init()
+        let containerSuperView = root.view!
         delegate.statusCompletion = { [container] status in
             switch status {
             case .didReiceiveAd(let bannerView):
-                let containerSuperView = root.view!
                 containerSuperView.addSubview(container)
                 container.addSubview(bannerView)
                 

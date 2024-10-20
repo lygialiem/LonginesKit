@@ -12,6 +12,7 @@
 		0C3BFD842C3118EA00A7D716 /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; };
 		0C3BFD852C3118EA00A7D716 /* LonginesFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C3BFD882C31193C00A7D716 /* LKBannerAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC661462C3071D100E869A9 /* LKBannerAdsPlugin.swift */; };
+		0C5CFD632CC54E8E00EA3586 /* LKBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5CFD622CC54E8E00EA3586 /* LKBannerViewController.swift */; };
 		0C6B88342C3002FD00CA41AF /* LonginesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FFCC862C29508A00BD543A /* LonginesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C6B88362C3002FD00CA41AF /* LKBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCCCB2C29717700BD543A /* LKBaseView.swift */; };
 		0C6B88372C3002FD00CA41AF /* LKAppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */; };
@@ -156,6 +157,7 @@
 /* Begin PBXFileReference section */
 		0C1A78DC2C4830DD008117C4 /* LKAnimatedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAnimatedCell.swift; sourceTree = "<group>"; };
 		0C1A78E02C48317D008117C4 /* Cell Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell Ext.swift"; sourceTree = "<group>"; };
+		0C5CFD622CC54E8E00EA3586 /* LKBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKBannerViewController.swift; sourceTree = "<group>"; };
 		0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6F74042C46B6A00043FA74 /* LKAdvertisementPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAdvertisementPlugin.swift; sourceTree = "<group>"; };
 		0C6F740B2C46B8D20043FA74 /* Json Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Json Ext.swift"; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 				21FFCCA42C295D9200BD543A /* Assets.xcassets */,
 				21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */,
 				21FFCCA92C295D9200BD543A /* Info.plist */,
+				0C5CFD622CC54E8E00EA3586 /* LKBannerViewController.swift */,
 			);
 			path = AppSample;
 			sourceTree = "<group>";
@@ -770,6 +773,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */,
+				0C5CFD632CC54E8E00EA3586 /* LKBannerViewController.swift in Sources */,
 				21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
