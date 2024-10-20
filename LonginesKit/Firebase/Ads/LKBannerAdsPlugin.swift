@@ -18,7 +18,6 @@ public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService,
     
     public struct BannerInfo {
         let rootName: String
-        let container: UIView
         let bannerView: GADBannerView
         let bannerDelegate: GADBannerViewDelegate
     }
@@ -52,31 +51,13 @@ public extension LKBannerAdsPlugin {
         
         guard let id = config.bannerAdID, !id.isEmpty else { return }
         
-        let container = UIView.init()
         let delegate = LKBannerDelegate.init()
-        let containerSuperView = root.view!
-        delegate.statusCompletion = { [container] status in
+        
+        delegate.statusCompletion = { status in
             switch status {
             case .didReiceiveAd(let bannerView):
-                containerSuperView.addSubview(container)
-                container.addSubview(bannerView)
-                
-                [bannerView, container].forEach { view in
-                    view.translatesAutoresizingMaskIntoConstraints = false
-                }
-                
-                NSLayoutConstraint.activate([
-                    bannerView.topAnchor.constraint(equalTo: container.topAnchor),
-                    bannerView.bottomAnchor.constraint(equalTo: container.bottomAnchor),
-                    bannerView.leadingAnchor.constraint(equalTo: container.leadingAnchor),
-                    bannerView.trailingAnchor.constraint(equalTo: container.trailingAnchor),
-                    
-                    container.leadingAnchor.constraint(equalTo: containerSuperView.leadingAnchor),
-                    container.trailingAnchor.constraint(equalTo: containerSuperView.trailingAnchor),
-                    container.bottomAnchor.constraint(equalTo: containerSuperView.safeAreaLayoutGuide.bottomAnchor),
-                ])
-                
-               completion?(container)
+            
+               completion?(bannerView)
                 
             case .didFailToReceiveAd:
                 break
@@ -95,17 +76,15 @@ public extension LKBannerAdsPlugin {
         
         if !bannerInfos.contains(where: {$0.rootName == root.className }) {
             bannerInfos.append(.init(rootName: root.className,
-                                     container: container,
                                      bannerView: bannerView,
                                      bannerDelegate: delegate))
         }
     }
     
-    func detachBanner(from root: UIViewController, completion: LKVoidAction? = nil) {
-        guard let index = bannerInfos.firstIndex(where: {$0.rootName == root.className}) else {
+    func detachBanner(rootName: String, completion: LKVoidAction? = nil) {
+        guard let index = bannerInfos.firstIndex(where: {$0.rootName == rootName}) else {
             return
         }
-        bannerInfos[index].container.removeFromSuperview()
         bannerInfos.remove(at: index)
         completion?()
     }
