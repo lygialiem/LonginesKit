@@ -121,9 +121,9 @@ class HomeViewController: LKBaseViewController {
         
         showNativeAdButton.addAction(.init(handler: { [weak self] _ in
             guard let self else { return }
-            self.nativeAdPlugin.nativeAdsS
-                .sink { ads in
-                    print("== Native Ads:", ads)
+            self.nativeAdPlugin.didReceiveAd
+                .sink { ad in
+                    print("== Native Ads:", ad)
                 }
                 .store(in: &self.subscriptions)
             

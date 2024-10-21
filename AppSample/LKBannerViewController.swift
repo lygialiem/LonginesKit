@@ -23,7 +23,7 @@ final class LKBannerViewController: LKBaseViewController {
     }
     
     deinit {
-        bannerPlugin.detachBanner(from: self)
+        bannerPlugin.detachBanner(rootName: self.className)
         print("== deinit: \(self.className)")
     }
 }

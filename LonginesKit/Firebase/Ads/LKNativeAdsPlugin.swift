@@ -22,13 +22,8 @@ public class LKNativeAdPlugin: NSObject, LKPluggableApplicationDelegateService, 
     
     public required init(config: LKAdvertisements) {
         self.config = config
-        super.init()
         
-        nativeAdsS
-            .sink { [weak self] ads in
-                self?.nativeAds = ads
-            }
-            .store(in: &cancellables)
+        super.init()
     }
     
     public convenience init(numberOfAds: Int = 3, config: LKAdvertisements) {
@@ -38,7 +33,7 @@ public class LKNativeAdPlugin: NSObject, LKPluggableApplicationDelegateService, 
     
     private var adLoader: GADAdLoader?
     public var nativeAds = [GADNativeAd]()
-    public let nativeAdsS = ReplayValueSubject<[GADNativeAd]>.init(bufferSize: 1)
+    public let didReceiveAd = CurrentValueSubject<GADNativeAd?, Never>.init(nil)
     private var numberOfAds: Int = 3
     
     public func loadAds() {
@@ -65,9 +60,11 @@ extension LKNativeAdPlugin: GADNativeAdLoaderDelegate {
     }
     
     public func adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADNativeAd) {
-        nativeAds.append(nativeAd)
-        nativeAd.delegate = self
-        nativeAdsS.send(nativeAds)
+        if !nativeAds.contains(nativeAd) {
+            nativeAds.append(nativeAd)
+            nativeAd.delegate = self
+            didReceiveAd.send(nativeAd)
+        }
     }
     
     public func adLoaderDidFinishLoading(_ adLoader: GADAdLoader) {
