@@ -31,7 +31,7 @@ public class LKAppOpenAdsPlugin: NSObject, LKPluggableApplicationDelegateService
     private var isLoadingAd = false
     private var isShowingAd = false
     
-    private func loadAd() async {
+    public func loadAd() async {
         
         guard let id = config.appOpenAdID, !id.isEmpty else {
             return

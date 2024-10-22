@@ -88,6 +88,10 @@ class LKExampleViewController: LKBaseViewController {
             view.alpha = 0.5
             view.isUserInteractionEnabled = false
         }
+        
+        Task {
+            await appOpenAdPlugin.loadAd()
+        }
     }
     
     override func visualize() {
