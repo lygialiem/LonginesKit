@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C1A78DD2C4830DD008117C4 /* LKAnimatedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A78DC2C4830DD008117C4 /* LKAnimatedCell.swift */; };
 		0C1A78E12C48317D008117C4 /* Cell Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A78E02C48317D008117C4 /* Cell Ext.swift */; };
+		0C1E70BC2CC758AB00036F70 /* LKAppOpenAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E70BA2CC7588F00036F70 /* LKAppOpenAdsPlugin.swift */; };
 		0C3BFD842C3118EA00A7D716 /* LonginesFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; };
 		0C3BFD852C3118EA00A7D716 /* LonginesFirebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE78EE82C2FFE1C00B4284B /* LonginesFirebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C3BFD882C31193C00A7D716 /* LKBannerAdsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC661462C3071D100E869A9 /* LKBannerAdsPlugin.swift */; };
@@ -87,7 +88,7 @@
 		0CFB00902C468650007282D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFB008E2C468650007282D8 /* AdSupport.framework */; };
 		0CFB00912C468650007282D8 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFB008F2C468650007282D8 /* AdServices.framework */; };
 		21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9B2C295D9000BD543A /* AppDelegate.swift */; };
-		21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* HomeViewController.swift */; };
+		21FFCCA02C295D9000BD543A /* LKExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FFCC9F2C295D9000BD543A /* LKExampleViewController.swift */; };
 		21FFCCA52C295D9200BD543A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA42C295D9200BD543A /* Assets.xcassets */; };
 		21FFCCA82C295D9200BD543A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -157,6 +158,7 @@
 /* Begin PBXFileReference section */
 		0C1A78DC2C4830DD008117C4 /* LKAnimatedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAnimatedCell.swift; sourceTree = "<group>"; };
 		0C1A78E02C48317D008117C4 /* Cell Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell Ext.swift"; sourceTree = "<group>"; };
+		0C1E70BA2CC7588F00036F70 /* LKAppOpenAdsPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppOpenAdsPlugin.swift; sourceTree = "<group>"; };
 		0C5CFD622CC54E8E00EA3586 /* LKBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKBannerViewController.swift; sourceTree = "<group>"; };
 		0C6B884D2C3002FD00CA41AF /* LonginesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LonginesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6F74042C46B6A00043FA74 /* LKAdvertisementPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAdvertisementPlugin.swift; sourceTree = "<group>"; };
@@ -226,7 +228,7 @@
 		21FFCC8F2C29510000BD543A /* LKAppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAppAppearance.swift; sourceTree = "<group>"; };
 		21FFCC992C295D9000BD543A /* AppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FFCC9B2C295D9000BD543A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		21FFCC9F2C295D9000BD543A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		21FFCC9F2C295D9000BD543A /* LKExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKExampleViewController.swift; sourceTree = "<group>"; };
 		21FFCCA42C295D9200BD543A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21FFCCA72C295D9200BD543A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21FFCCA92C295D9200BD543A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 				0C7B41502C31B8480089E2D6 /* LKRewardedAdsPlugin.swift */,
 				0CFB00762C463EF1007282D8 /* LKNativeAdsPlugin.swift */,
 				0C6F74042C46B6A00043FA74 /* LKAdvertisementPlugin.swift */,
+				0C1E70BA2CC7588F00036F70 /* LKAppOpenAdsPlugin.swift */,
 			);
 			path = Ads;
 			sourceTree = "<group>";
@@ -483,7 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				21FFCC9B2C295D9000BD543A /* AppDelegate.swift */,
-				21FFCC9F2C295D9000BD543A /* HomeViewController.swift */,
+				21FFCC9F2C295D9000BD543A /* LKExampleViewController.swift */,
 				21FFCCA42C295D9200BD543A /* Assets.xcassets */,
 				21FFCCA62C295D9200BD543A /* LaunchScreen.storyboard */,
 				21FFCCA92C295D9200BD543A /* Info.plist */,
@@ -756,6 +759,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1E70BC2CC758AB00036F70 /* LKAppOpenAdsPlugin.swift in Sources */,
 				0C7B41532C31B8560089E2D6 /* LKRewardedAdsPlugin.swift in Sources */,
 				0C6F74062C46B6B10043FA74 /* LKAdvertisementPlugin.swift in Sources */,
 				0C7B414F2C31B3890089E2D6 /* LKInterstitialAdsPlugin.swift in Sources */,
@@ -772,7 +776,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21FFCCA02C295D9000BD543A /* HomeViewController.swift in Sources */,
+				21FFCCA02C295D9000BD543A /* LKExampleViewController.swift in Sources */,
 				0C5CFD632CC54E8E00EA3586 /* LKBannerViewController.swift in Sources */,
 				21FFCC9C2C295D9000BD543A /* AppDelegate.swift in Sources */,
 			);

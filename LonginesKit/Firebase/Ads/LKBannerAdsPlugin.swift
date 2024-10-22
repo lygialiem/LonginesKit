@@ -10,10 +10,6 @@ import LonginesKit
 import GoogleMobileAds
 import Combine
 
-public struct LKBannerAdConfig: LKAdConfigurable {
-    public var id: String
-}
-
 public class LKBannerAdsPlugin: NSObject, LKPluggableApplicationDelegateService, LKAdPluggable {
     
     public struct BannerInfo {

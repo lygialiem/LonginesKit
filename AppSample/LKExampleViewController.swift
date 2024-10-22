@@ -11,7 +11,7 @@ import LonginesFirebase
 import LonginesQonversion
 import Combine
 
-class HomeViewController: LKBaseViewController {
+class LKExampleViewController: LKBaseViewController {
     
     private var subscriptions = [AnyCancellable]()
     
@@ -25,6 +25,8 @@ class HomeViewController: LKBaseViewController {
     
     private lazy var showNativeAdButton = createButton(title: "Show Native Ad")
     
+    private lazy var showAppOpenAdButton = createButton(title: "Show App Open Ad")
+    
     private lazy var purchaseButton = createButton(title: "Purchase IAP item")
     
     private let rewardedAdPlugin = LKPluggableTool.queryAppDelegate(for: LKRewardedAdPlugin.self)!
@@ -34,6 +36,8 @@ class HomeViewController: LKBaseViewController {
     private let bannerPlugin = LKPluggableTool.queryAppDelegate(for: LKBannerAdsPlugin.self)!
     
     private let nativeAdPlugin = LKPluggableTool.queryAppDelegate(for: LKNativeAdPlugin.self)!
+    
+    private let appOpenAdPlugin = LKPluggableTool.queryAppDelegate(for: LKAppOpenAdsPlugin.self)!
     
     private lazy var mainStackView: UIStackView = {
         let stackView = UIStackView.init()
@@ -72,6 +76,7 @@ class HomeViewController: LKBaseViewController {
                                           showInterstitialAdButton,
                                           showRewardedAdButton,
                                           showNativeAdButton,
+                                          showAppOpenAdButton,
                                           purchaseButton)
         NSLayoutConstraint.activate([
             mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -95,6 +100,12 @@ class HomeViewController: LKBaseViewController {
                 self?.startBusiness()
             }
             .store(in: &subscriptions)
+        
+        showAppOpenAdButton.addAction(.init(handler: { [weak self] _ in
+            self?.appOpenAdPlugin.present() {
+                print(1)
+            }
+        }), for: .touchUpInside)
         
         showInterstitialAdButton.addAction(.init(handler: { [weak self] _ in
             guard let self else { return }
@@ -146,7 +157,7 @@ class HomeViewController: LKBaseViewController {
     }
 }
 
-private extension HomeViewController {
+private extension LKExampleViewController {
     
     func startBusiness() {
         mainStackView.arrangedSubviews.forEach { view in

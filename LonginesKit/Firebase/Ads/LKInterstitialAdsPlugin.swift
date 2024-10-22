@@ -10,10 +10,6 @@ import Combine
 import GoogleMobileAds
 import LonginesKit
 
-public struct LKInterstitialAdConfig: LKAdConfigurable {
-    public var id: String
-}
-
 public class LKInterstitialAdsPlugin: NSObject, LKPluggableApplicationDelegateService, LKAdPluggable {
     
     private var interstitialAd: GADInterstitialAd?

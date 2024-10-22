@@ -63,17 +63,24 @@ public extension LKAdvertisementPlugin {
 
 public struct LKAdvertisements: Decodable {
     
-    public init(bannerAdID: String? = nil, interstitialAdID: String? = nil, rewardedAdID: String? = nil, nativeAdID: String? = nil) {
+    public init(bannerAdID: String? = nil,
+                interstitialAdID: String? = nil,
+                rewardedAdID: String? = nil,
+                nativeAdID: String? = nil,
+                appOpenAdID: String? = nil) {
+        
         self.bannerAdID = bannerAdID
         self.interstitialAdID = interstitialAdID
         self.rewardedAdID = rewardedAdID
         self.nativeAdID = nativeAdID
+        self.appOpenAdID = appOpenAdID
     }
     
     var bannerAdID: String?
     var interstitialAdID: String?
     var rewardedAdID: String?
     var nativeAdID: String?
+    var appOpenAdID: String?
 }
 
 public protocol LKAdConfigurable {
@@ -82,8 +89,9 @@ public protocol LKAdConfigurable {
 
 
 extension LKAdvertisements {
-    public static let `default` = LKAdvertisements.init(bannerAdID: "ca-app-pub-3940256099942544/2435281174",
+    public static let testConfig = LKAdvertisements.init(bannerAdID: "ca-app-pub-3940256099942544/2435281174",
                                                         interstitialAdID: "ca-app-pub-3940256099942544/4411468910",
                                                         rewardedAdID: "ca-app-pub-3940256099942544/1712485313",
-                                                        nativeAdID: "ca-app-pub-3940256099942544/3986624511")
+                                                        nativeAdID: "ca-app-pub-3940256099942544/3986624511",
+                                                        appOpenAdID: "ca-app-pub-3940256099942544/5575463023")
 }

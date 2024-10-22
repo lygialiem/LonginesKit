@@ -23,10 +23,11 @@ class AppDelegate: LKPluggableApplicationDelegate {
     override init() {
         super.init()
         
-        let bannerAdPlugin = LKBannerAdsPlugin.init(config: .default)
-        let interstitialAdPlugin = LKInterstitialAdsPlugin.init(config: .default)
-        let rewardedAdPlugin = LKRewardedAdPlugin.init(config: .default)
-        let nativeAdPlugin = LKNativeAdPlugin.init(config: .default)
+        let bannerAdPlugin = LKBannerAdsPlugin.init(config: .testConfig)
+        let interstitialAdPlugin = LKInterstitialAdsPlugin.init(config: .testConfig)
+        let rewardedAdPlugin = LKRewardedAdPlugin.init(config: .testConfig)
+        let nativeAdPlugin = LKNativeAdPlugin.init(config: .testConfig)
+        let appOpenAdPlugin = LKAppOpenAdsPlugin.init(config: .testConfig)
         
         internalServices = [
             LKFirebaseConfigPlugin.init(testDeviceIDs: []),
@@ -34,11 +35,12 @@ class AppDelegate: LKPluggableApplicationDelegate {
             LKUserPropertyPlugin.init(),
             LKAnalyticPlugin.init(),
             LKIAPPlugin.init(projectKey: "m1woJHYltNnj4JARHt8JJWA0ejZiel_x"),
-            LKAdvertisementPlugin(ads: [bannerAdPlugin, interstitialAdPlugin, rewardedAdPlugin, nativeAdPlugin]),
+            LKAdvertisementPlugin(ads: [bannerAdPlugin, interstitialAdPlugin, rewardedAdPlugin, nativeAdPlugin, appOpenAdPlugin]),
             bannerAdPlugin,
             interstitialAdPlugin,
             rewardedAdPlugin,
             nativeAdPlugin,
+            appOpenAdPlugin,
         ]
     }
     
@@ -48,7 +50,7 @@ class AppDelegate: LKPluggableApplicationDelegate {
         LKAppAppearance.designerScreenWidth = 430
         LKAppAppearance.designerScreenHeight = 932
         
-        let vc = HomeViewController.init()
+        let vc = LKExampleViewController.init()
         let nav = vc.embedNavigation
         nav.setNavigationBarHidden(true, animated: false)
         
@@ -58,13 +60,4 @@ class AppDelegate: LKPluggableApplicationDelegate {
         
         return `super`
     }
-}
-
-
-
-extension LKAdvertisements {
-    static let `default` = LKAdvertisements.init(bannerAdID: "ca-app-pub-3940256099942544/2435281174",
-                                                 interstitialAdID: "ca-app-pub-3940256099942544/4411468910",
-                                                 rewardedAdID: "ca-app-pub-3940256099942544/1712485313",
-                                                 nativeAdID: "ca-app-pub-3940256099942544/3986624511")
 }
