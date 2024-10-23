@@ -146,7 +146,7 @@ public extension LKIAPPlugin {
                 }
                 if let products = offerings?.availableOfferings
                     .first(where: { $0.identifier == self.qonversionOffering})?.products {
-                    let models = products.map{$0.asModel}
+                    let models = products.map{LKIAPModel.init(qonversonProduct: $0)}
                     continuation.resume(returning: .success(models))
                 } else {
                     continuation.resume(returning: .failure(LKIAPError.fetchProductFailed))
@@ -226,15 +226,6 @@ public extension LKIAPPlugin {
                 }
             }
         }
-    }
-}
-
-private extension Qonversion.Product {
-    var asModel: LKIAPModel {
-        .init(qonversionID: qonversionID,
-              storeID: storeID,
-              description: description,
-              price: prettyPrice)
     }
 }
 

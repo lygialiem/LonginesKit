@@ -152,7 +152,7 @@ class LKExampleViewController: LKBaseViewController {
                     guard !self.iapPlugin.isPremiumUser else { return }
                     Task {
                         let item = self.iapPlugin.productList.first!
-                        let state = await self.iapPlugin.purchase(product: item.qonversionID)
+                        let state = await self.iapPlugin.purchase(product: item.qonversonProduct.qonversionID)
                         print("== state:", state)
                     }
                 }
